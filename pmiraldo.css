@@ -1,0 +1,328 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: #1954a6;
+}
+
+a:active {
+    color: black;
+}
+
+.bodypm {
+    padding-top: 55px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+
+/* css for the projects details */
+
+.proj-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.abstract-keywords {
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 16px;
+}
+
+.proj-h2 {
+    text-align: center;
+}
+
+.proj-paper {
+    font-size: 12px;
+}
+
+.proj-li {
+    font-size: 16px;
+    margin: 0 0 15px 0;
+}
+
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+
+.footer {
+    overflow: hidden;
+    background-color: #e1e1e1;
+    padding: 5px 20px;
+    width: 100%;
+    border-top: 2px solid grey;
+    font-size: 12px;
+    /*position: fixed; */
+    bottom: 0;
+    opacity: 0.95;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #e1e1e1;
+    padding: 5px 20px;
+    width: 100%;
+    border-bottom: 2px solid grey;
+    position: fixed;
+    opacity: 0.95;
+}
+
+.header ul {
+    display: table;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header li {
+    display: table-cell;
+    width: 100%;
+}
+
+.header a {
+    color: #555;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 0px;
+    border-radius: 10px;
+    margin: 0px 0px 0px 0px;
+    float: left;
+    display: block;
+    text-align: left;
+}
+
+.header .icon {
+    display: none;
+}
+
+.header a:hover {
+    /* background-color: #ddd; */
+    color: #1954a6;
+}
+
+.header a.active {
+    /* background-color: #6666A0; */
+    background-color: #999;
+    color: white;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    padding: block;
+    float: left;
+}
+
+.col-1 {
+    width: 60%;
+    text-align: left;
+}
+
+.col-2 {
+    width: 40%;
+    text-align: right;
+}
+
+ul li {
+    padding: 0px;
+    margin: 5px 0px 0px 0px;
+    font-size: 16px;
+}
+
+ol li {
+    padding: 0px;
+    margin: 15px 0px 0px 0px;
+    font-size: 16px;
+}
+
+dl {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+dl dt {
+    color: black;
+    float: left;
+    font-weight: bold;
+    margin: 0px 0px 5px 0px;
+    padding: 0px;
+    width: auto;
+}
+
+dl dd {
+    padding: 0px 0px 0px 0px;
+    margin-left: 52px;
+    margin-bottom: 5px;
+}
+
+.ddnews {
+    margin-left: 75px;
+}
+
+.dddyear {
+    margin-left: 92px;
+}
+
+
+/**********************************************************/
+
+
+/* transform icon menu */
+
+
+/**********************************************************/
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    padding-top: 0px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 0;
+    transition: 0.5s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-4px, 4px);
+    transform: rotate(-45deg) translate(-4px, 4px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-4px, -4px);
+    transform: rotate(45deg) translate(-4px, -4px);
+}
+
+
+/**********************************************************/
+
+@media screen and (max-width: 800px) {
+    .col-1 {
+        width: 100%;
+    }
+    .col-2 {
+        width: 100%;
+        text-align: left;
+    }
+    .active {
+        background-color: #4CAF50;
+        color: white;
+    }
+    .header li:not(:first-child) {
+        display: none;
+    }
+    .header a.icon {
+        float: right;
+        display: block;
+        text-align: left;
+        padding-bottom: 0px;
+        margin-top: -47px;
+    }
+    .header.responsive ul {
+        display: block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #e1e1e1;
+    }
+    .header.responsive .icon {
+        float: right;
+        display: block;
+        text-align: left;
+    }
+    .header a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    .header.responsive li {
+        float: right;
+        display: block;
+        text-align: left;
+        margin: 0px 0px 0px 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    /*
+.header-right {
+  float: none;
+}
+
+.header a:hover {
+  color: #555;
+}
+  
+.header a.active {
+  background-color: #999;
+  color: white;
+} 
+*/
+    /* css for proj details */
+    .proj-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+    .abstract-keywords {
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 16px;
+    }
+    .proj-h2 {
+        text-align: center;
+        font-size: 18px;
+    }
+    ul li {
+        padding: 0px;
+        margin: 5px 0px 0px -20px;
+    }
+    ol li {
+        padding: 0px;
+        margin: 15px 0px 0px -20px;
+    }
+    .proj-li {
+        margin: 15px 0px 0px -20px;
+    }
+}

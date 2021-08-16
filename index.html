@@ -1,1 +1,448 @@
-Hello World
+<!-- 
+  Pedro Miraldo
+  Instituto Superior Tecnico, Lisboa
+  pedrosdm@gmail.com
+  -->
+<html>
+
+<head>
+    <title>Pedro Miraldo | IST</title>
+    <link REL="SHORTCUT ICON" HREF="./figures/ico.ico">
+    </link>
+    <!--<title>Pedro Miraldo | IST</title>
+          <LINK REL="SHORTCUT ICON" HREF="./figures/ist_ico.ico"> -->
+    <link type="text/css" rel="stylesheet" href="pmiraldo.css">
+    </link>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    </link>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./pmiraldo.js"></script>
+</head>
+
+<body>
+
+
+    <div class="header" id="myTopnav">
+        <ul>
+            <li>
+                <img src="figures/logo.png" alt="Istitution Logo" height="50px" />
+            </li>
+            <li>
+                <a class="active" href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="./publications.html">Publications</a>
+            </li>
+            <li>
+                <a href="./projects.html">Projects</a>
+            </li>
+            <li>
+                <a href="./videos.html">Videos</a>
+            </li>
+            <li>
+                <a href="./PMiraldoCV.pdf">CV</a>
+            </li>
+        </ul>
+        <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">
+            <div class="container" onclick="iconTrans(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </a>
+    </div>
+
+    <br>
+
+
+
+    <div class="bodypm">
+
+        <div class="row">
+            <div class="col-1">
+                <h1 id="home">
+                    Pedro Miraldo
+                </h1>
+                <p>
+                    Institute for Systems and Robotics,<br>
+                    Instituto Superior T&eacute;cnico,<br>
+                    University of Lisbon,<br>
+                    Av. Rovisco Pais, 1, 7th floor,<br> 1049-001 Lisboa, <br>Portugal.<br><br>
+                    <!-- Room: B:708,<br> -->
+                    E-Mail: pedro(dot)miraldo(at)tecnico(dot)ulisboa(dot)pt
+                </p>
+                <div itemscope itemtype="https://schema.org/Person">
+                    <a itemprop="sameAs" content="https://orcid.org/0000-0002-8551-2448"
+                        href="https://orcid.org/0000-0002-8551-2448" target="orcid.widget" rel="noopener noreferrer"
+                        style="vertical-align:top;">
+                        <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
+                            style="width:1em;margin-right:.5em;" alt="ORCID iD icon">orcid.org/0000-0002-8551-2448
+                    </a>
+                </div>
+            </div>
+            <div class="col-2">
+                <br>
+                <img src="figures/myPic.jpg" alt="Pedro Miraldo" height="200" />
+            </div>
+        </div>
+
+        <br>
+
+        <hr>
+
+
+        <frame frameborder="0" width="100%" height="250">
+            <table width="100%">
+                <tr border: none;>
+                    <td width=50% valign="top" ;>
+                        <h3 class="separates">Short Bio:</h3>
+                        <p>
+                            I am a Researcher (second stage, "Investigador Auxiliar") and invited Assistant Professor at
+                            the Institute for Systems & Robotics and the Department of Electrical & Computer
+                            Engineering, Instituto Superior T&eacute;cnico, Lisboa (IST). Before joining IST, I was a
+                            postdoctoral associate at KTH Royal Institue of Technology from 2018-19 and an FCT
+                            postdoctoral researcher at the IST from 2014-18. From 2015-18, I was an Invited Assistant
+                            Professor at IST (ECE, and CS&E). I got an M.Sc and Ph.D. degrees in Electrical and Computer
+                            Engineering, from the Faculty of Sciences and Technology, University of Coimbra, Portugal
+                            (2008 and 2013 respectively), under the supervision of Prof. Helder Araujo. I am a member of
+                            The Institute of Electrical and Electronics Engineers (IEEE).
+                        </p>
+                        <p>
+                            My main research topics are: 3D computer vision, robot vision, active vision.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </frame>
+
+        <hr>
+        <!-- horizontal line -->
+
+        <frame frameborder="0" width="100%" height="250">
+            <table width="100%">
+                <tr border: none;>
+                    <td valign="top" ;>
+                        <h3 class="separates" id="news">News:</h3>
+                        <dl>
+                            <dt>
+                                <font color=#cc0000>[03-2021]</font>
+                            </dt>
+                            <dd class="ddnews"> Paper accepted in the IEEE Transactions on Robotics (T-RO):<br>
+                                <i>On Incremental Structure-from-Motion using Lines</i>
+                                [<a href="https://arxiv.org/abs/2105.11196">link</a>];
+                            </dd>
+                        </dl>
+                        <br>
+                        <div
+                            style="margin-top: -15px; margin-bottom: 15px; width: 100%; height: 10px; border-bottom: 2.5px solid black; text-align: center;">
+                            <span style="font-size: medium; background-color: #FFFFFF; padding: 0px 10px;">
+                                <b>2021</b>
+                            </span>
+                        </div>
+                        <dl>
+                            <dt>
+                                <font color=#cc0000>[09-2020]</font>
+                            </dt>
+                            <dd class="ddnews"> Paper accepted in the Asian Conf. Computer Vision (ACCV):<br>
+                                <i>Mapping of Sparse 3D Data using Alternating Projection</i> [<a
+                                    href="https://arxiv.org/abs/2010.02516">link</a>];
+                            </dd>
+                            <dt>
+                                <font color=#cc0000>[07-2020]</font>
+                            </dt>
+                            <dd class="ddnews"> Paper accepted in the IEEE/RSJ Int'l Conf. Intelligent Robots and
+                                Systems (IROS):<br>
+                                <i>Fast Model Predictive Image-Based Visual Servoing for Quadrotors</i> [link];
+                            </dd>
+                            <dt>
+                                [03-2020]
+                            </dt>
+                            <dd class="ddnews"> Paper accepted in the Journal of Mathematical Imaging and Vision
+                                (JMIV):<br>
+                                <i>On the Generalized Essential Matrix Correction: An efficient solution to the problem
+                                    and its applications</i> [<a href="https://arxiv.org/abs/1709.06328">link</a>];
+                            <dt>
+                                [02-2020]
+                            </dt>
+                            <dd class="ddnews"> Two papers accepted in the IEEE/CVF Conf. Computer Vision and Pattern
+                                Recognition (CVPR):<br>
+                                <i>Minimal Solvers for 3D Scan Alignment with Pairs of Intersecting Lines</i> [link],
+                                and<br>
+                                <i>3DRegNet: A Deep Neural Network for 3D Point Registration</i> [<a
+                                    href="https://arxiv.org/abs/1904.01701">link</a>];
+                            <dt>
+                                [01-2020]
+                            </dt>
+                            <dd class="ddnews">Paper accepted in the IEEE Int'l Conf. Robotics and Automation (ICRA):
+                                <i>Active Depth Estimation: Stability Analysis and its Applications</i> [<a
+                                    href="https://arxiv.org/abs/2003.07137">link</a>];
+                        </dl>
+                        <br>
+                        <div
+                            style="margin-top: -15px; margin-bottom: 15px; width: 100%; height: 10px; border-bottom: 2.5px solid black; text-align: center;">
+                            <span style="font-size: medium; background-color: #FFFFFF; padding: 0px 10px;">
+                                <b>2020</b>
+                            </span>
+                        </div>
+
+                        <dl>
+                            <dt>
+                                [07-2019]
+                            </dt>
+                            <dd class="ddnews">I joined the Instituto Superior T&eacute;cnico, Lisboa, as a Researcher;
+                            </dd>
+                            <dt>
+                            <dt>
+                                [06-2019]
+                            </dt>
+                            <dd class="ddnews">Paper accepted in the IEEE/RSJ Int'l Conf. Intelligent Robots and Systems
+                                (IROS):<br>
+                                <i>A Framework for Depth Estimation and Relative Localization of Ground Robots using
+                                    Computer Vision</i> [<a href="https://arxiv.org/abs/1908.00309">link</a>,<a
+                                    href="./videos.html">video</a>];
+                            </dd>
+                            <dt>
+                                [02-2019]
+                            </dt>
+                            <dd class="ddnews">Paper accepted in the IEEE/CVF Conf. Computer Vision and Pattern
+                                Recognition (CVPR):
+                                <i>Minimal Solvers for Mini-Loop Closures in 3D Multi-Scan Alignment</i> [<a
+                                    href="https://arxiv.org/abs/1904.03941">link</a>];
+                            </dd>
+                            <dt>
+                                [01-2019]
+                            </dt>
+                            <dd class="ddnews">Paper accepted in the American Control Conference (ACC): <i>Active
+                                    Estimation of 3D
+                                    Lines in Spherical Coordinates</i> [<a
+                                    href="https://arxiv.org/abs/1902.00473">link</a>];</dd>
+                            <dt>
+                                [01-2019]
+                            </dt>
+                            <dd class="ddnews">Two papers accepted in the IEEE Int'l Conf. Robotics and Automation
+                                (ICRA):<br> 1) <i>POSEAMM: A Unified Framework for Solving Pose Problems using an
+                                    Alternating Minimization
+                                    Method</i> [<a href="https://arxiv.org/abs/1904.04858">link</a>,
+                                <a href="https://github.com/pmiraldo/2018AMMPoseSolver">code</a>], and <br> 2)
+                                <i>OmniDRL: Robust Pedestrian Detection using Deep Reinforcement Learning on
+                                    Omnidirectional
+                                    Cameras</i> [<a href="http://arxiv.org/abs/1903.00676">link</a>,video];
+                            </dd>
+                        </dl>
+                        <br>
+                        <div
+                            style="margin-top: -15px; margin-bottom: 15px; width: 100%; height: 10px; border-bottom: 2.5px solid black; text-align: center;">
+                            <span style="font-size: medium; background-color: #FFFFFF; padding: 0px 10px;">
+                                <b>2019</b>
+                            </span>
+                        </div>
+                        <dl>
+                            <dt>[12-2018]</dt>
+                            <dd class="ddnews">Paper accepted in the Elsevier Robotics and Autonomous Systems Journal
+                                (RAS):
+                                <i>Efficient and Robust Pedestrian Detection using Deep Learning for Human-Aware
+                                    Navigation</i> [<a href="https://arxiv.org/abs/1607.04441">link</a>,<a
+                                    href="./videos.html">video</a>];
+                            </dd>
+                            <dt>[07-2018]</dt>
+                            <dd class="ddnews">Paper accepted in the European Conf. Computer Vision (ECCV):
+                                <i>A Minimal Closed-Form Solution for Multi-Perspective Pose Estimation using Points and
+                                    Lines, </i> [<a href="https://arxiv.org/abs/1807.09970">link</a>,<a
+                                    href="myproj/2018mp_minimal_points_lines.html">project</a>,<a
+                                    href="./videos.html">video</a>];
+                            </dd>
+                            <dt>[07-2018]</dt>
+                            <dd class="ddnews">I will join the KTH Royal Institute of Technology, Stockholm, as a
+                                PostDoctoral Researcher;
+                            </dd>
+                            <dt>[06-2018]</dt>
+                            <dd class="ddnews">Paper in IEEE/RSJ Int'l Conf. Intelligent Robots and Systems (IROS):
+                                <i>Active Structure-from-Motion for 3D Straight Lines</i> [<a
+                                    href="https://arxiv.org/abs/1807.00753">link</a>,<a href="./videos.html">video</a>];
+                            </dd>
+                            <dt>[02-2018]</dt>
+                            <dd class="ddnews">Paper accepted in the IEEE/CVF Conf. Computer Vision and Pattern
+                                Recognition (CVPR):
+                                <i>Analytical Modeling of Vanishing Points and Curves in Catadioptric Cameras</i> [<a
+                                    href="https://arxiv.org/abs/1804.09460">link</a>,<a
+                                    href="myproj/2018vp_ncccs.html">project</a>];
+                            </dd>
+                            <dt>[01-2018]</dt>
+                            <dd class="ddnews">Paper in IEEE Robotics and Automation Letters (RA-L) and IEEE Int'l Conf.
+                                Robotics and Automation (ICRA):
+                                <i>Increasing robustness of vision-based localization using potential fields</i> [<a
+                                    href="https://arxiv.org/abs/1801.07249">link</a>];
+                            </dd>
+                            <dt>[01-2018]</dt>
+                            <dd class="ddnews">Journal paper in Elsevier Optics and Lasers in Engineering (OLEN):
+                                <i>Generic distortion model for metrology under optical microscopes</i> [<a
+                                    href="https://doi.org/10.1016/j.optlaseng.2017.12.006">link</a>].
+                            </dd>
+                        </dl>
+                    </td>
+                </tr>
+            </table>
+        </frame>
+
+
+        <hr>
+        <!-- horizontal line -->
+
+        <h3 id="teaching" class="separates">Teaching:</h3>
+        <dl>
+            <dt>[2020-21]</dt>
+            <dd class="ddnews">Artificial Intelligence and Decision Systems</a> (ECE/IST);</dd>
+            <dt>[2017-18]</dt>
+            <dd class="ddnews"><a
+                    href="https://fenix.tecnico.ulisboa.pt/disciplinas/CGra451795/2017-2018/1-semestre">Computer
+                    Graphics</a> (CS&E/IST);</dd>
+            <dt>[2016-17]</dt>
+            <dd class="ddnews"><a
+                    href="https://fenix.tecnico.ulisboa.pt/disciplinas/AED9111326/2016-2017/2-semestre">Algorithms &
+                    Data
+                    Structures</a> (ECE/IST); and</dd>
+            <dt>[2015-16]</dt>
+            <dd class="ddnews"><a
+                    href="https://fenix.tecnico.ulisboa.pt/disciplinas/Cont2517/2015-2016/1-semestre">Automatic
+                    Control</a> (ECE/IST).</dd>
+        </dl>
+
+        <hr>
+        <!-- horizontal line -->
+
+        <h3 id="students" class="separates">Students:</h3>
+        <p>
+            PhD Students:
+        </p>
+        <dl>
+            <!--  <dt>[2018/22]</dt>
+              <dd class="ddnews">Jo&atilde;o Campos (ECE/IST), <i>3D Computer Vision</i> with Pedro U. Lima;</dd>-->
+            <dt>[2019-23]</dt>
+            <dd class="ddnews">G. Dias Pais (ECE/IST), <i>3D Vision and Machine Learning</i> with Jacinto C. Nascimento;
+            </dd>
+            <dt>[2017-21]</dt>
+            <dd class="ddnews"><a href="http://web.tecnico.ulisboa.pt/andre.mateus/">Andr&#xE9; Mateus</a> (ECE/IST),
+                <i>3D
+                    Vision and Visual Servoing</i> with Pedro U. Lima;
+            </dd>
+        </dl>
+        <p>
+            MSc Students:
+        </p>
+        <dl>
+            <dt>[2020-21]</dt>
+            <dd class="ddnews">L. Lopes (ECE/IST), <i>A SLAM Module for the Formula Student Competition;</i></dd>
+            <dt>[2020-21]</dt>
+            <dd class="ddnews">D. Morgado (ECE/IST), <i>Labeling of Object in a Road Scene;</i></dd>
+            <dt>[2020-21]</dt>
+            <dd class="ddnews">L. Cardoso (ECE/IST), <i>Automatic vehicle and pedestrian labeling;</i></dd>
+            <dt>[2020-21]</dt>
+            <dd class="ddnews">V. Piedade (ECE/IST), <i>A robust and accurate method for counting vehicles;</i></dd>
+        </dl>
+
+        <br>
+
+
+        <!--  MSc Students:<br>
+            [<b>2018- </b>] Jos&eacute; Mota (EAer/IST), <i>3D Vision</i>; <br>
+          -->
+
+        <h3 class="separates">Alumni:</h3>
+        <p>
+            Grantees:
+        </p>
+        <dl>
+            <dt>[2018-19]</dt>
+            <dd class="ddnews">G. Dias Pais (ECE/IST), <i>3D Vision and Deep Learning</i>;</dd>
+            <dt>[2017-18]</dt>
+            <dd class="ddnews">Jo&atilde;o Campos (ECE/IST), <i>Camera Pose Estimation</i>;</dd>
+            <dt>[2017-18]</dt>
+            <dd class="ddnews">Francisco Eiras (ECE/IST), <i>Vanishing Points</i>;</dd>
+            <dt>[2016-17]</dt>
+            <dd class="ddnews">R&ocirc;mulo Rodrigues (ECE/IST), <i>Robot Vision</i>;</dd>
+            <dt>[2015-17]</dt>
+            <dd class="ddnews">Jos&eacute; Iglesias (ECE/IST), <i>Omnidirectional Cameras</i>;</dd>
+        </dl>
+        <p>
+            MSc Students:
+        </p>
+        <dl>
+            <dt>[2021]</dt>
+            <dd> Diogo Oliveira (ECE/IST), <i>Single Image Plane Reconstruction;</i>
+            </dd>
+            <dt>[2020]</dt>
+            <dd>Aldo Teran (ECE/KTH), <i>Acoustic-Inertial Forward-Scan Sonar Simultaneous Localization and Mapping</i>,
+                with Pedro Roque;
+            </dd>
+            <dt>[2020]</dt>
+            <dd>Elisa Bin (ECE/KTH), <i>MPC-based Visual Servo Control for UAVs</i>, with Pedro Roque;
+            </dd>
+            <dt>[2018]</dt>
+            <dd>G. Dias Pais (ECE/IST), <i>OmniDRL: Robust PD using omnidirectional cameras and deep RL</i>, with
+                Jacinto C. Nascimento;
+            </dd>
+            <dt>[2017]</dt>
+            <dd>Soraia Ferreira (ECE/IST), <i>Mobile Arm Visual Servoing for Object Manipulation</i>, with Rodrigo
+                Ventura;
+            </dd>
+            <dt>[2017]</dt>
+            <dd>Jos&eacute; Mendes (ECE/IST), <i>Forensic use of Mobile Phone Cameras: Measuring the Height of a
+                    Person</i>, with Jos&eacute; Gaspar;</dd>
+            <dt>[2016]</dt>
+            <dd>Luis Luz (ECE/IST), <i>Cooperative Perception for People Tracking and Human-Aware Navigation</i>, with
+                Rodrigo Venura;
+            </dd>
+            <dt>[2016]</dt>
+            <dd>Diogo Maximino (ECE/IST), <i>Improvement of Non-Central Catadioptric Cameras Pose Estimation Using 3D
+                    Lines</i>, with Rodrigo Ventura;</dd>
+            <dt>[2015]</dt>
+            <dd>Jo&atilde;o O'Neill (ECE/IST), <i>Semantic Maps for Domestic Robots</i>, with Rodrigo Ventura;</dd>
+            <dt>[2015]</dt>
+            <dd>Ant&oacute;nio Ribeiro (ECE/UC), <i>"Odometria Visual usando campos visuais n&atilde;o sobrepostos"</i>,
+                with Helder Araujo;</dd>
+            <dt>[2014]</dt>
+            <dd>Tiago Dias (ECE/UC), <i>Augmented Reality using Non-Central Catadioptric Imaging Devices</i>, with Nuno
+                Gon&ccedil;alves.
+            </dd>
+        </dl>
+
+
+        <hr>
+        <!-- horizontal line -->
+
+        <h3 class="separates">Links:</h3>
+        <p>
+            <i class="fas fa-flask" style="color:#1954a6;"></i> <a href="./publications.html">Publications</a><br>
+            <i class="fab fa-youtube-square" style="color:#1954a6;"></i> <a href="./videos.html">Videos</a><br>
+            <i class="fab fa-google" style="color:#1954a6;"></i> <a
+                href=https://scholar.google.pt/citations?user=e4ZW_fgAAAAJ&hl=en&oi=ao ">Google Scholar</a> <br>
+        <i class=" fab fa-github " style=" color:#1954a6; "></i> <a href=" https://github.com/pmiraldo ">GitHub</a><br>
+        <i class=" fas fa-universal-access " style=" color:#1954a6; "></i> <a
+          href=" https://arxiv.org/a/0000-0002-8551-2448 "><i>arXiv</i></a><br>
+    </p>
+
+    <br>
+    <p>
+      <font size=" -1 ">
+        <!--<a href=" https://www.kth.se/ac/division-of-decision-and-control-systems-1.788078 ">Division of Decision and
+          Control Systems</a> <br>
+        <a href=" https://kth.se/en ">KTH Royal Institute of Technology</a> <br> -->
+        <!-- <a href=" http://lucia.isr.tecnico.ulisboa.pt ">Lucia PhD School</a> <br> -->
+              <a href=" http://isr.tecnico.ulisboa.pt ">Institute for Systems and Robotics</a> <br>
+              <a href=" https://tecnico.ulisboa.pt/en ">Instituto Superior T&#xE9;cnico</a> <br>
+              <a href=" http://www.ulisboa.pt/en/ ">University of Lisbon</a><br>
+      </font>
+    </p>
+
+  </div>
+
+  <div class=" footer ">
+    <!--Website hosted by <a href=" http://www.kth.se ">www.kth.se</a><br>-->
+    Website hosted by <a href=" http://www.tecnico.ulisboa.pt ">tecnico.ulisboa.pt</a><br> Last updated on May 25, 2021
+  </div>
+
+</body>
+
+
+</html>
