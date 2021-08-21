@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+    --var-max-width: 1500px 
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: #1e6ddb;
+}
+
+a:active {
+    color: black;
+}
+
+.body_intro {
+    padding-top: 80px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    font-size: 17px;
+    max-width: 1500 ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.body_general {
+    padding-top: 80px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    font-size: 17px;
+    max-width: 1500 ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.background_light{
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    background-color: #e0e6f0;
+}
+
+.abstract-keywords {
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 16px;
+}
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    padding: block;
+    float: left;
+}
+
+.col-1 {
+    width: 30%;
+    text-align: left;
+}
+
+.col-2 {
+    width: 70%;
+    text-align: left;
+}
+
+.col-3{
+    width: 17%;
+    text-align: left;
+}
+
+.col-4{
+    width: 83%;
+    text-align: left;
+}
+
+ul li {
+    padding: 0px;
+    margin: 5px 0px 0px 0px;
+}
+
+ol li {
+    padding: 0px;
+    margin: 15px 0px 0px 0px;
+}
+
+dl {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+dl dt {
+    color: black;
+    float: left;
+    font-weight: bold;
+    margin: 0px 0px 5px 0px;
+    padding: 0px;
+    width: auto;
+}
+
+dl dd {
+    padding: 0px 0px 0px 0px;
+    margin-left: 52px;
+    margin-bottom: 5px;
+}
+
+
+/**********************************************************/
+/* transform icon menu */
+/**********************************************************/
+
+.option-header {
+    display: inline-block;
+    cursor: pointer;
+    padding-top: 0px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(161, 161, 161);
+    margin: 3px 0;
+    transition: 0.5s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-4px, 4px);
+    transform: rotate(-45deg) translate(-4px, 4px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-4px, -4px);
+    transform: rotate(45deg) translate(-4px, -4px);
+}
+
+/**********************************************************/
+/* when screen is smaller than a maximum balue             */
+/**********************************************************/
+
+@media screen and (max-width: 1100px) { 
+
+    .body_intro {
+        padding-top: 75px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        font-size: 16px;
+    }
+
+
+    .body_general {
+        padding-top: 55px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        font-size: 16px;
+    }
+
+    .col-1 {
+        width: 100%;
+    }
+    .col-2 {
+        width: 100%;
+        text-align: left;
+        padding-top: 25px;
+    }
+
+    .col-3{
+        width: 100%;
+        text-align: left;
+    }
+    
+    .col-4{
+        width: 100%;
+        text-align: left;
+        padding-top: 25px;
+    }
+
+    .active {
+        background-color: #4CAF50;
+        color: white;
+    }
+   
+    /* css for proj details */
+    .proj-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+    .abstract-keywords {
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 16px;
+    }
+}

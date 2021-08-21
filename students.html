@@ -1,347 +1,170 @@
-<!-- Feito por Pedro Daniel dos Santos Miraldo -->
-<!-- Instituto de Sistemas e Robotica -->
-<!-- Departamento de Eng. Electrotecnica e de Computadores -->
-<!-- Universidade de Coimbra -->
-<!-- Data: 18 Jun 2014 -->
-
-
+<!-- 
+  Pedro Miraldo
+  Instituto Superior Tecnico, Lisboa
+  pedrosdm@gmail.com
+  -->
 
 <html>
 
 <head>
-  <title>Pedro Miraldo | ISR IST</title>
-  <LINK REL="SHORTCUT ICON" HREF="./figures/ist_ico.ico?v=2">
-  <!-- <link rel="stylesheet" href="mypage.css" /> -->
-  <base target="_parent" />
-
-  <style>
-    ol li {
-      list-style-type: decimal;
-      margin: 0 0 10px 0;
-    }
-
-    ol.prefixed {
-      counter-reset: item;
-      list-style-type: none;
-      *list-style-type: decimal;
-    }
-
-    ol.prefixed li:before {
-      content: '['counter(item, decimal) ']';
-      counter-increment: item;
-    }
-  </style>
-
-
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script type="text/javascript">
-    google.charts.load('current', { 'packages': ['bar'] });
-    google.charts.setOnLoadCallback(drawChart);
-
-    function drawChart() {
-      var data = google.visualization.arrayToDataTable([
-        ['', ''],
-        ['14', 2],
-        ['15', 1],
-        ['16', 1],
-        ['17', 2],
-        ['18', 1],
-        ['19', 1],
-      ]);
-
-      var options = {
-        title: '',
-        backgroundColor: {
-          fill: '#FFFFFF',
-          fillOpacity: 0.0,
-          // stroke: '#000000',
-          // strokeWidth: 1,
-        },
-        series: {
-          0: { color: '#000000' },
-        },
-        legend: {
-          position: 'none'
-        },
-        role: 'annotation',
-        bars: 'vertical' // Required for Material Bar Charts.
-      };
-
-      var chart = new google.charts.Bar(document.getElementById('barchart_material'));
-
-      chart.draw(data, google.charts.Bar.convertOptions(options));
-    }
-  </script>
-
-
+  <title>Pedro Miraldo | IST</title>
+  <link REL="SHORTCUT ICON" HREF="./figures/ico.ico">
+  </link>
+  <link type="text/css" rel="stylesheet" href="body.css">
+  <link type="text/css" rel="stylesheet" href="header_footer.css">
+  <link type="text/css" rel="stylesheet" href="student.css">
+  </link>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="./pmiraldo.js"></script>
 </head>
 
 
 <body>
 
-  <frame frameborder="0" width="850" height="250">
-    <table border="0" width="100%">
-      <tr>
-        <td align="left">
-          <p>
-            <font size="5">
-              <b>MSc Students:</b>
-            </font>
-          </p>
-        </td>
-        <td align="right">
-          <p>
-            <font size="3">
-              <b>Pedro Miraldo</b><br />
-              <a href="http://users.isr.ist.utl.pt/~pmiraldo/">Back</a>
-            </font>
-          </p>
-        </td>
-      </tr>
-    </table>
-  </frame>
+  <div class="header" id="myTopnav">
+    <ul>
+      <li>
+        <img src="figures/IST_C_RGB_NEG.png" alt="Istitution Logo" height="40px" />
+      </li>
+      <li>
+        <a href="./index.html">Home</a>
+      </li>
+      <li>
+        <a href="./publications.html">Publications</a>
+      </li>
+      <li>
+        <a class="active" href="./students.html">Students</a>
+      </li>
+      <li>
+        <a href="./PMiraldoCV.pdf">CV</a>
+      </li>
+    </ul>
+    <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">
+      <div class="option-header" onclick="iconTrans(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </a>
+  </div>
 
-  <hr>
+  <style>
+    
+  </style>
+  </head>
 
-  <h3>Index:</h3>
-  <table border="0" width="100%">
-    <tr>
-      <td align="left">
-        <p>
-          <ul>
-            <li>
-              <a href=#2018>2018</a> (#1)
-            </li>
-            <li>
-              <a href=#2017>2017</a> (#2)
-            </li>
-            <li>
-              <a href=#2016>2016</a> (#2)
-            </li>
-            <li>
-              <a href=#2015>2015</a> (#2)
-            </li>
-            <li>
-              <a href=#2014>2014</a> (#1)
-            </li>
-          </ul>
-        </p>
-      </td>
-      <td align="right">
-        <div id="barchart_material" style="width: 250px; height: 125px;"></div>
-      </td>
-    </tr>
-  </table>
+  <body>
+
+    <div class="body_general">
+
+      <h3>PhD Students:</h3>
+
+      <div class="student">
+        <img src="people/gp.jpeg" alt="Avatar" class="image" style="width: 200px;">
+        <div class="middle">
+          <div class="text">
+            G. Dias Pais (IST)<br>
+            2020-2024
+          </div>
+        </div>
+      </div>
+      <div class="student">
+        <img src="people/am.jpg" alt="Avatar" class="image" style="width: 200px;">
+        <div class="middle">
+          <div class="text">
+            Andre Mateus (IST)<br>
+            2017-2021
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <h3>Scholarship Grantees:</h3>
+
+      <div class="student">
+        <img src="people/vp.jpg" alt="Avatar" class="image" style="width: 200px;">
+        <div class="middle">
+          <div class="text">
+            Valter Piedade (IST)<br>
+            2020-2021
+          </div>
+        </div>
+      </div>
+      <div class="student">
+        <img src="people/td.jpg" alt="Avatar" class="image" style="width: 200px;">
+        <div class="middle">
+          <div class="text">
+            Tiago Dias (IST)<br>
+            2015-2019
+          </div>
+        </div>
+      </div>
+      <div class="student">
+        <img src="people/jc.jpeg" alt="Avatar" class="image" style="width: 200px;">
+        <div class="middle">
+          <div class="text">
+            Joao Campos (IST)<br>
+            2017-2018
+          </div>
+        </div>
+      </div>
+      <div class="student">
+        <img src="people/fe.jpg" alt="Avatar" class="image" style="width: 200px;">
+        <div class="middle">
+          <div class="text">
+            Francisco Eiras (IST)<br>
+            2017-2018
+          </div>
+        </div>
+      </div>
+      <div class="student">
+        <img src="people/rr.jpg" alt="Avatar" class="image" style="width: 200px;">
+        <div class="middle">
+          <div class="text">
+            Romulo Rodrigues (IST)<br>
+            2016-2017
+          </div>
+        </div>
+      </div>
+      <div class="student">
+        <img src="people/ji.jpeg" alt="Avatar" class="image" style="width: 200px;">
+        <div class="middle">
+          <div class="text">
+            Jose Iglesias (IST)<br>
+            2015-2017
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <h3>Master Students:</h3>
+      <ol>
+        <li>[2021] L. Lopes (ECE/IST), <i>A SLAM Module for the Formula Student Competition;</i></li>
+        <li>[2021] D. Morgado (ECE/IST), <i>Labeling of Object in a Road Scene;</i></li>
+        <li>[2021] L. Cardoso (ECE/IST), <i>Automatic vehicle and pedestrian labeling;</i></li>
+        <li>[2021] V. Piedade (ECE/IST), <i>A robust and accurate method for counting vehicles;</i></li>
+        <li>[2021] Diogo Oliveira (ECE/IST), <i>Single Image Plane Reconstruction;</i></li>
+        <li>[2020] Aldo Teran (ECE/KTH), <i>Acoustic-Inertial Forward-Scan Sonar Simultaneous Localization and Mapping</i>;</li>
+        <li>[2020] Elisa Bin (ECE/KTH), <i>MPC-based Visual Servo Control for UAVs</i>;</li>
+        <li>[2018] G. Dias Pais (ECE/IST), <i>OmniDRL: Robust PD using omnidirectional cameras and deep RL</i>;</li>
+        <li>[2017] Soraia Ferreira (ECE/IST), <i>Mobile Arm Visual Servoing for Object Manipulation</i>;</li>
+        <li>[2017] Jos&eacute; Mendes (ECE/IST), <i>Forensic use of Mobile Phone Cameras: Measuring the Height of a Person</i>;</li>
+        <li>[2016] Luis Luz (ECE/IST), <i>Cooperative Perception for People Tracking and Human-Aware Navigation</i>;</li>
+        <li>[2016] Diogo Maximino (ECE/IST), <i>Improvement of Non-Central Catadioptric Cameras Pose Estimation Using 3D Lines</i>;</li>
+        <li>[2015] Jo&atilde;o O'Neill (ECE/IST), <i>Semantic Maps for Domestic Robots</i>;</li>
+        <li>[2015] Ant&oacute;nio Ribeiro (ECE/UC), <i>"Odometria Visual usando campos visuais n&atilde;o sobrepostos"</i>; </li>
+        <li>[2014] Tiago Dias (ECE/UC), <i>Augmented Reality using Non-Central Catadioptric Imaging Devices</i>.</li>
+    </ol>
 
 
-  <hr>
+    </div>
 
-  <h3 id="2018">2018:</h3>
-  <ol>
-    <li>
-      <font size=3>
-        <b>Author:</b> Gon&ccedil;alo Jos&eacute; Dias Pais (2018), ECE "Instituto Superior T&eacute;cnico", University
-        of Lisboa; <br>
-        <b>Title:</b> OmniDRL: Robust Pedestrian Detection using Omnidirectional Cameras and Deep Reinforcement
-        Learning;<br>
-        <b>Abstract:</b> Pedestrian detection is one of the most explored topics in Computer Vision and Pattern
-        Recognition. The increase use of deep learning methods in the Computer Vision community allowed the development
-        of new and highly competitive algorithms for object detection, particularly for pedestrian detection. A class of
-        such methods is based on deep Reinforcement Learning. However, for object detection in omnidirectional camera
-        systems the literature is still scarce, due to the complexities associated with their high distortions.
-        Nonetheless, these systems, namely catadioptric imaging devices are strongly beneficial for various applications
-        (ranging from video surveillance to perception in robotics). In this thesis, I present a novel efficient
-        technique for robust pedestrian detection, using omnidirectional catadioptric camera systems with deep
-        Reinforcement Learning. My method is tested and compared with current related approaches that do not consider
-        the underlying distortions aforementioned. Besides the novel formalism presented herein, my method improves
-        significantly the results when compared with state-of-the-art methodologies;<br>
-        <b>Document:</b> <a href="./msc_thesis/2018_OmniDRL.pdf">link</a>.
-      </font>
-    </li>
-  </ol>
+    <div class=" footer ">
+      <!--Website hosted by <a href=" http://www.kth.se ">www.kth.se</a><br>-->
+      Website hosted by <a href="https://github.com/ "></a>GitHub<br>
+      Last updated on August 16, 2021
+    </div>
 
-  <hr>
-
-  <h3 id="2017">2017:</h3>
-  <ol>
-    <li>
-      <font size=3>
-        <b>Author:</b> Soraia Mendes Ferreira (2017), ECE "Instituto Superior T&eacute;cnico", University of Lisboa;
-        <br>
-        <b>Title:</b> Mobile Arm Visual Servoing for Object Manipulation;<br>
-        <b>Abstract:</b> Objects manipulation by a robotic arm inserted in mobile platforms, in unstructured
-        environments, such as domestic environments, is a particularly challenging subject. Currently, the approach is
-        to divide this question in two parts. The first one consists in implementing a plan trajectory to reach the
-        object, avoiding any collision between the robot and other objects. The second one, is executing the defined
-        trajectory in the environment. However, modification of the target position or obstacles may invalidate the
-        planed trajectory. Thus, developing a closed loop control method, with constant feedback from the environment,
-        to detect the targeted object, and potential obstacles, is essential. To this aim, the dynamic and non
-        structured environment is perceived through vision sensing. We actuate in both joint space of the arm, and in
-        the velocities of the mobile platform. We intend to extend the actual known real time navigation methods,
-        applied to moving robots, to control the arm, attached to the mobile platform, to manipulate static objects,
-        using vision;<br>
-        <b>Document:</b> <a href="./msc_thesis/2017_Mobile_Arm_Visual_Servoing.pdf">link</a>.
-      </font>
-    </li>
-    <li>
-      <font size=3>
-        <b>Author:</b> Jos&eacute; Ant&oacute;nio Carvalho Mendes (2017), ECE "Instituto Superior T&eacute;cnico",
-        University of Lisboa; <br>
-        <b>Title:</b> Forensic use of Mobile Phone Cameras: Measuring the Height of a Person;<br>
-        <b>Abstract:</b> This work addresses the height estimation of a person in a picture, that was captured by a RGB
-        camera on a mobile phone. In this dissertation, we use the assumption that an auxiliary mobile color-depth
-        camera is used to aid in the calibration of the phone camera that originally took the picture. The proposed
-        calibration method use the Direct Linear Transformation (DLT) algorithm with points and/or lines. The use of
-        lines will allow the calibration data to benefit from image processing fitting and detection tools, improving
-        the results. The height estimation will be based on 3D pose prediction model, or considering that the person is
-        in vertical pose. Uncertainty analysis in height estimation shows how camera parameters (such as tilting angle
-        and zoom) can make the estimate more robust;<br>
-        <b>Document:</b> <a href="./msc_thesis/2017_Forensic_use_of_Mobile_Phone_Cameras.pdf">link</a>.
-      </font>
-    </li>
-    <!--  <li>
-      <font size=3>
-        <b>Author:</b>  (2017), ECE "Instituto Superior T&eacute;cnico", University of Lisboa; <br>
-        <b>Title:</b> ;<br>
-        <b>Abstract:</b> ;<br>
-        <b>Document:</b> <a href="./msc_thesis/">link</a>.
-      </font>
-      </li> -->
-  </ol>
-
-  <hr>
-
-  <h3 id="2016">2016:</h3>
-  <ol>
-    <li>
-      <font size=3>
-        <b>Author: Lu&iacute;s Carlos Barreira Luz</b> (2016), ECE "Instituto Superior T&eacute;cnico", University of
-        Lisboa; <br>
-        <b>Title:</b> Cooperative Perception for People Tracking and Human-Aware Navigation;<br>
-        <b>Abstract:</b> Humans and robots have a closer relation everyday and being able to navigate aware of the
-        human's presence is really important for robots and it is also a big step towards the future. This work is on
-        Human-Aware Navigation (HAN). HAN means that the robot is navigating in a safe way for humans, aware of their
-        presence. A lot has to be taken into account, even social human rules, that can be represented as constraints.
-        Different disciplines contribute to a better HAN, like psychology or anthropology, that study the way humans
-        behave and behave with each other. For the robots to be able to navegate human aware, to know where the humans
-        are is very important. This thesis provides a framework that detects and tracks people. Detection is made with
-        the cooperative perception of a several RGB cameras, a RGB-D camera and Laser Range Finder(LRF). These sensors
-        will be combined in order to obtain a better estimation of the position of a person. Tracking with a Kalman
-        Filter(KF) with a Nearest-Neighbour Joint Probabilistic Data Association(NNJPDA);<br>
-        <b>Document:</b> <a
-          href="./msc_thesis/2016_Cooperative_Perception_for_People_Tracking_and_Human-Aware_Navigation.pdf">link</a>.
-      </font>
-    </li>
-    <li>
-      <font size=3>
-        <b>Author:</b> Diogo Emanuel Parreira Maximino (2016), ECE "Instituto Superior T&eacute;cnico", University of
-        Lisboa; <br>
-        <b>Title:</b> Improvement of Non-Central Catadioptric Cameras Pose Estimation Using 3D Lines;<br>
-        <b>Abstract:</b> The objective of this work is to keep developing and improve a software to estimate the planar
-        pose of a robot using a visual-based method for a Non-Central Catadioptric System (NCCS). The method works by
-        using the projection model for NCCS with known 3D lines to compute the rigid transformation between the world
-        frame and the camera frame. The software is meant to run as close as possible to real-time, to be robust to
-        noisy observations and to be out-of-the-box. Through this work it will be presented the study made on the theory
-        behind and the process of development. It will be analysed which are the best solutions to solve the problem
-        computationally in respect to computation time and robustness facing errors. It is developed a solution that
-        achieves a fast performance and that is more robust than the method used before;<br>
-        <b>Document:</b> <a
-          href="./msc_thesis/2016_Improvement_of_Non-Central_Catadioptric_Cameras_Pose_Estimation_using_3D_Lines.pdf">link</a>.
-      </font>
-    </li>
-  </ol>
-
-  <hr>
-
-  <h3 id="2015">2015:</h3>
-  <ol>
-    <li>
-      <font size=3>
-        <b>Author:</b> Joo Miguel Camiso Soares de Goyri O'Neill (2015), ECE "Instituto Superior T&eacute;cnico",
-        University of Lisboa; <br>
-        <b>Title:</b> Semantic Maps for Domestic Robots;<br>
-        <b>Abstract:</b> Due to the increasing application of robots and particularly servicing robots, the question of
-        how to generate intelligent behavior is progressively gaining importance in the Artificial Intelligence
-        community. Although the solution to this issue was thought to be a very complete and rigid modeling of the
-        environment, even if completely separated from it, there has been a shift towards an apparently incomplete
-        modeling that allows emergent behavior and learning through interaction with the environment. In this work, we
-        will design a semantic map that will be encoded with the fundamental knowledge, to be able to accomplish it's
-        task. Though through interaction with the environment, it will become increasingly proficient is the task's
-        completion. The task will consist of determining the position of objects in the environment using an object
-        recognition module to sense the world, an action planer, and a hybrid semantic map. The goal of the semantic map
-        is to store and process the sensed information into high-level information, that will be later used by the
-        action planer module. For flexibility pruposes, the knowledge database was designed to integrate information of
-        all types so as to be used by all functional modules. The Problog reasoning engine was designed to enable very
-        complete and mutable models of the environment. Several experiments were made in realistic scenarios, using
-        every day objects. The experiments show clearly that the use of the semantic map makes the search process more
-        efficient, after the first interaction with the environment;<br>
-        <b>Document:</b> <a href="./msc_thesis/2015_Semantic_Maps_for_Domestic_Robots.pdf">link</a>.
-      </font>
-    </li>
-    <li>
-      <font size=3>
-        <b>Author:</b> Ant&oacute;nio Pedro Pinto Ribeiro (2015), ECE University of Coimbra; <br>
-        <b>Title:</b> "Odometria Visual usando campos visuais n&atilde;o sobreposto";<br>
-        <b>Abstract:</b> This Master Thesis is mainly focused the study of Visual Odometry using multi-camera systems
-        with non-overlapping visual fields. The motion estimation plays a fundamental role in computer vision research.
-        During the last decade, there has been a considerable growing in the study of Visual Odometry. Initially only a
-        combined camera with both sensors was used. Later, the classical stereo pair systems appeared, which made the
-        motion estimation more robust. One limitation of these systems is field of view is the same, then came up
-        multi-camera systems where the field of view became extended and non-overlapping. In this dissertation were
-        analyzed algorithms that solve the problem of motion estimation in 6 degrees of freedom by using multicameras
-        rigidly coupled systems with non-overlapping fields of view. During the study of these methods was developed an
-        application in Matlab, that allows recreate generics situations that can be resembled to real cases. This
-        simulator has a wide range of options that can be predefined by the user. This is very useful for the
-        implementation of algorithms in the area of computer vision and mobile robotics. The methods described in this
-        dissertation cover a broad knowledge of computer vision, in particular concepts of: rigid transformations;
-        epipolar geometry; projection points; estimation of a fundamental and essential matrix, and others. All methods
-        mentioned above were described in the thesis. In the implementation of the algorithms in simulator, were
-        considered generic movements in order to obtain a clear and precise study about the in uence of noise in the
-        pose estimation. Experiments show the performance study of the methods and suggest the most appropriated for use
-        in real applications;<br>
-        <b>Document:</b> <a
-          href="./msc_thesis/2015_Odometria_Visual_usando_campos_visuais_nao_sobrepostos.pdf">link</a>.
-      </font>
-    </li>
-  </ol>
-
-  <hr>
-
-  <h3 id="2014">2014:</h3>
-  <ol>
-    <li>
-      <font size=3>
-        <b>Author:</b> Tiago Jos&eacute; Sim&otilde;es Dias (2014), ECE University of Coimbra; <br>
-        <b>Title:</b> Augmented Reality using Non-Central Catadioptric Imaging Devices;<br>
-        <b>Abstract:</b> In this dissertation it is proposed a framework for the use of augmented reality using
-        non-central catadioptric imaging devices. Our system is composed by a non-central catadioptric imaging device
-        formed by a perspective camera and a spherical mirror mounted on a Pioneer 3-DX robot. In this dissertation, our
-        main goal is considering a 3D virtual object in the world, with known 3D coordinates, make the projection of
-        this 3D virtual object into the 2D image plane of a non-central catadioptric imaging device. Our framework
-        presents a solution which allows us to project texturized objects (with detailed images or single color
-        textures) to the image in realtime, up to 20 fps (using a laptop), depending on the 3D object that will be
-        projected. When dealing with an implementation of augmented reality, some important issues must be considered,
-        such as: projection of 3D virtual objects to the 2D image plane, occlusions, illumination and shading. To the
-        best of our knowledge this is the first time that this problem is addressed (all state-of-the-art methods are
-        derived for central camera systems). Thus, since this is an unexplored subject for non-central systems, some
-        reformulations and implementations of algorithms and methodologies must be done to solve our problems. To make
-        clear our approach a pipeline was made, composed by two stages: pre-processing and realtime. Each one of these
-        stages have a sequence of steps, that must be done to preserve correct operation of our framework. The
-        pre-processing stage contains three steps: camera calibration, 3D object triangulation and object texturization.
-        The realtime stage is also composed by three steps: "QI projection", occlusions and illumination. To test the
-        robustness of our framework three distinct 3D virtual objects were used. The 3D objects used were: a
-        parallelepiped and Stanford bunny and the happy Buddha from the Stanford repository. For each object several
-        tests were made: using a positional light (at the top of a static robot or in an arbitrary position) pointing to
-        the 3D object; using a moving light source using two different movements (not at the same time); using three
-        light sources, with different colors, with different movements associated at each one pointing to the object,
-        and using a light source, positioned at the top of the robot, in a moving robot where the source is pointing to
-        the 3D virtual object position;<br>
-        <b>Document:</b> <a
-          href="./msc_thesis/2014_Augmented_Reality_using_Non-Central_Catadioptric_Imaging_Device.pdf">link</a>.
-      </font>
-    </li>
-  </ol>
-
-</body>
-
-</html>
+  </body>
