@@ -66,12 +66,15 @@
     color: white;
 }
 
+.header img {
+    height: 40px 
+}
 
 /**********************************************************/
 /* when screen is smaller than a maximum balue             */
 /**********************************************************/
 
-@media screen and (max-width: 765px) { 
+@media screen and (max-width: 600px) { 
 
     .header {
         padding-left: 15px;

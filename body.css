@@ -172,7 +172,7 @@ dl dd {
 /* when screen is smaller than a maximum value             */
 /**********************************************************/
 
-@media screen and (max-width: 765px) { 
+@media screen and (max-width: 600px) { 
 
     .body_intro {
         padding-top: 75px;
