@@ -185,11 +185,11 @@ dl dd {
     }
 
     .my_picture{
-        width: 190px;
+        width: min(calc(100% * 0.6),190px);
     }
 
     .project_gif{
-        width: 160px;
+        width: min(calc(100% * 0.6),200px);
     }
 
     .body_general {
@@ -211,7 +211,7 @@ dl dd {
 
     .col-3{
         width: 100%;
-        text-align: left;
+        text-align: center;
     }
     
     .col-4{
