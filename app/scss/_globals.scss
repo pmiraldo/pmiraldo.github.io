@@ -1,0 +1,56 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.0;
+    font-family: Helvetica;
+    color: $color_text;
+    font-size: $font_med;
+}
+
+
+// geeneral links
+a, a:visited, a:hover{
+    text-decoration: none;
+    color: $color_text;
+}
+
+// flexbox styly
+
+.flex{
+    display: flex;
+
+    &-jc-sb{
+        justify-content: space-between;
+    }
+
+    &-jc-c{
+        justify-content: center;
+    }
+
+    &-ai-c{
+        align-items: center;
+    }
+}
+
+
+// mobile vs desktop view
+.hide_for_mobile{
+    @include breakpoint_down(small){
+        display: none;
+    }
+}
+
+.hide_for_desktop{
+    @include breakpoint_up(medium){
+        display: none;
+    }
+}
