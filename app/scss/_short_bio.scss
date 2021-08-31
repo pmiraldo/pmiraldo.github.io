@@ -1,0 +1,63 @@
+
+.background_light{
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    background-color: #e0e6f0;
+
+    @include breakpoint_down(small){
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.body_intro {
+    padding-top: 60px;
+    padding-bottom: 0px;
+    padding-right: #{"calc(100px - ( max(0px, ( 1500px - 100% ) ) / 10 ) )"};
+    padding-left: #{"calc(100px - ( max(0px, ( 1500px - 100% ) ) / 10 ) )"};
+    font-size: 17px;
+    max-width: 1500px ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.my_picture{
+    width: #{"min(80%, 190px)"};
+    @include breakpoint_down(small){
+        width: #{"min(calc(100% * 0.6),190px)"};
+    }
+}
+
+
+.row_bio{
+
+    &::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    &_picture_contact {
+        float: left;
+        width: 30%;
+        @include breakpoint_down(small){
+            width: 100%;
+            float: center;
+            padding-bottom: 30px;
+        }       
+    }
+
+    &_papers {
+        float: left;
+        width: 65%;
+        @include breakpoint_down(small){
+            width: 100%;
+        }
+        padding-left: 15px;
+    }
+
+
+}

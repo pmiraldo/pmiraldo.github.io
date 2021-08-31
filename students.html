@@ -10,43 +10,42 @@
   <title>Pedro Miraldo | IST</title>
   <link REL="SHORTCUT ICON" HREF="./figures/ico.ico">
   </link>
-  <link type="text/css" rel="stylesheet" href="body.css">
-  <link type="text/css" rel="stylesheet" href="header_footer.css">
-  <link type="text/css" rel="stylesheet" href="student.css">
-  </link>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="./pmiraldo.js"></script>
+  <link rel="stylesheet" href="/app/scss/style.css" class="css">
+  </link>
 </head>
 
 
 <body>
 
-  <div class="header" id="myTopnav">
-    <ul>
-      <li>
-        <img src="figures/IST_C_RGB_NEG.png" alt="Istitution Logo" height="40px">
-      </li>
-      <li>
-        <a href="./index.html">Home</a>
-      </li>
-      <li>
-        <a href="./publications.html">Publications</a>
-      </li>
-      <li>
-        <a class="active" href="./students.html">Students</a>
-      </li>
-      <li>
-        <a href="./PMiraldoCV.pdf">CV</a>
-      </li>
-    </ul>
-    <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">
-      <div class="option-header" onclick="iconTrans(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
+  <header class="header">
+    <nav id="nav_id" class="flex flex-jc-sb flex-ai-c mobile">
+      <a href="" class="header_logo">
+        <img src="figures/IST_C_RGB_NEG.png" , alt="institutional-logo">
+      </a>
+
+      <a id="hamburguer_button" href="" class="header_menu hide_for_desktop">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+
+      <div class="header_links hide_for_mobile">
+        <a id="go_home" href="index.html">Home</a>
+        <a id="go_publications" href="publications.html">Publications</a>
+        <a id="go_students" href="students.html">Students</a>
+        <a href="PMiraldoCV.pdf">CV</a>
       </div>
-    </a>
-  </div>
+    </nav>
+
+    <div id="hamburguer_menu_link" class="header_menu_links closed hide_for_desktop">
+      <a id="go_home_down" href="" class="selected">Home</a>
+      <a id="go_publications_down" href="publications.html">Publications</a>
+      <a id="go_students_down" href="students.html">Students</a>
+      <a href="PMiraldoCV.pdf">CV</a>
+    </div>
+
+  </header>
 
   <style>
 
@@ -175,5 +174,7 @@
       Last updated on August 23, 2021
     </div>
 
+    <script src="/app/js/script.js"></script>
+    <script src="/app/js/page_id.js"></script>
 
   </body>

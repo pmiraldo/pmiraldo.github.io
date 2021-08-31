@@ -10,7 +10,7 @@ html{
 body{
     margin: 0;
     padding: 0;
-    line-height: 1.0;
+    line-height: 1.1;
     font-family: Helvetica;
     color: $color_text;
     font-size: $font_med;
@@ -41,6 +41,38 @@ a, a:visited, a:hover{
     }
 }
 
+
+// items and enumarates
+
+ul li {
+    padding: 0px;
+    margin: 10px 0px 0px 0px;
+}
+
+ol li {
+    padding: 0px;
+    margin: 15px 0px 0px 0px;
+}
+
+dl {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+dl dt {
+    color: black;
+    float: left;
+    font-weight: bold;
+    margin: 0px 0px 5px 0px;
+    padding: 0px;
+    width: auto;
+}
+
+dl dd {
+    padding: 0px 0px 0px 0px;
+    margin-left: 52px;
+    margin-bottom: 5px;
+}
 
 // mobile vs desktop view
 .hide_for_mobile{

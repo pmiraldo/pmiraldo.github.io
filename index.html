@@ -18,73 +18,40 @@
 </head>
 
 <body>
+
     <header class="header">
         <nav id="nav_id" class="flex flex-jc-sb flex-ai-c mobile">
-            <a href="/" class="header_logo">
+            <a href="" class="header_logo">
                 <img src="figures/IST_C_RGB_NEG.png" , alt="institutional-logo">
             </a>
 
-            <a id="hamburguer_button" href="#" class="header_menu hide_for_desktop">
+            <a id="hamburguer_button" href="" class="header_menu hide_for_desktop">
                 <span></span>
                 <span></span>
                 <span></span>
             </a>
 
             <div class="header_links hide_for_mobile">
-                <a href="#" class="selected">Home</a>
-                <a href="#">Publications</a>
-                <a href="#">Students</a>
-                <a href="#">CV</a>
+                <a id="go_home" href="index.html">Home</a>
+                <a id="go_publications" href="publications.html">Publications</a>
+                <a id="go_students" href="students.html">Students</a>
+                <a href="PMiraldoCV.pdf">CV</a>
             </div>
         </nav>
 
-        <div id="hamburguer_menu_link" class="header_menu_links hide_for_desktop">
-            <a href="#"class="selected">Home</a>
-            <a href="#">Publications</a>
-            <a href="#">Students</a>
-            <a href="#">CV</a>
+        <div id="hamburguer_menu_link" class="header_menu_links closed hide_for_desktop">
+            <a id="go_home_down" href=""class="selected">Home</a>
+            <a id="go_publications_down"  href="publications.html">Publications</a>
+            <a id="go_students_down" href="students.html">Students</a>
+            <a href="PMiraldoCV.pdf">CV</a>
         </div>
 
     </header>
 
-
-    blabla
-
-
-    <!--
-
-
-    <div class="header" id="myTopnav">
-        <ul>
-            <li>
-                <img src="figures/IST_C_RGB_NEG.png" alt="Istitution Logo" height="40px">
-            </li>
-            <li>
-                <a class="active" href="./index.html">Home</a>
-            </li>
-            <li>
-                <a href="./publications.html">Publications</a>
-            </li>
-            <li>
-                <a href="./students.html">Students</a>
-            </li>
-            <li>
-                <a href="./PMiraldoCV.pdf">CV</a>
-            </li>
-        </ul>
-        <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">
-            <div class="option-header" onclick="iconTrans(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-        </a>
-    </div>
-
     <div class="background_light">
         <div class="body_intro">
-            <div class="row" id="home">
-                <div class="col-1">
+            <div class="row_bio" id="home">
+                <div class="row_bio_picture_contact">
                     <img src="figures/myPic.png" class="my_picture" alt="Pedro Miraldo"><br><br>
                     <b style="font-size:30">Pedro Miraldo</b><br>
                     Instituto Superior T&eacute;cnico<br>
@@ -106,7 +73,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="row_bio_info">
                     <p>
                         I am a second-stage Researcher (comparable to Assistant Research Professor) at the Institute for
                         Systems & Robotics and the Department of Electrical & Computer Engineering, IST Instituto
@@ -131,15 +98,16 @@
         </div>
     </div>
 
-    <div class="body_general">
+
+    <div class="selected_projects">
 
         <b style="font-size:25">Selected Projects and Publications:</b>
         <br><br><br>
-        <div class="row">
-            <div class="col-3">
-                <img src="project_gif/2021-active-lines-sfm.gif" class="project_gif">
+        <div class="row_project">
+            <div class="row_project_picture">
+                <img src="project_gif/2021-active-lines-sfm.gif">
             </div>
-            <div class="col-4">
+            <div class="row_project_papers">
                 <b>Active Structure-from-Motion using Lines:</b><br>
                 <ul>
                     <li>
@@ -172,11 +140,11 @@
 
         <br><hr><br>
 
-        <div class="row">
-            <div class="col-3">
-                <img src="project_gif/2020-line-intersections-reg.gif" class="project_gif">
+        <div class="row_project">
+            <div class="row_project_picture">
+                <img src="project_gif/2020-line-intersections-reg.gif" class="row_project_picture_gif">
             </div>
-            <div class="col-4">
+            <div class="row_project_papers">
                 <b>Intersecting Lines for 3D Registration:</b><br>
                 <ul>
                     <li>
@@ -205,11 +173,11 @@
 
         <br><hr><br>
 
-        <div class="row">
-            <div class="col-3">
-                <img src="project_gif/2020-regnet.gif" class="project_gif">
+        <div class="row_project">
+            <div class="row_project_picture">
+                <img src="project_gif/2020-regnet.gif" class="row_project_picture_gif">
             </div>
-            <div class="col-4">
+            <div class="row_project_papers">
                 <b>3D Registration using Deep Learning:</b><br>
                 <ul>
                     <li>
@@ -227,11 +195,11 @@
 
         <br><hr><br>
 
-        <div class="row">
-            <div class="col-3">
-                <img src="project_gif/2021-GEM.gif" class="project_gif">
+        <div class="row_project">
+            <div class="row_project_picture">
+                <img src="project_gif/2021-GEM.gif" class="row_project_picture_gif">
             </div>
-            <div class="col-4">
+            <div class="row_project_papers">
                 <b>Generalized Essential Matrix</b><br>
                 <ul>
                     <li>
@@ -254,11 +222,11 @@
 
         <br><hr><br>
 
-        <div class="row">
-            <div class="col-3">
-                <img src="project_gif/2021-general-pose-points-lines.gif" class="project_gif">
+        <div class="row_project">
+            <div class="row_project_picture">
+                <img src="project_gif/2021-general-pose-points-lines.gif" class="row_project_picture_gif">
             </div>
-            <div class="col-4">
+            <div class="row_project_papers">
                 <b>Using Lines and Points for General Camera Pose Estimation:</b><br>
                 <ul>
                     <li>
@@ -292,11 +260,11 @@
 
         <br><hr><br>
 
-        <div class="row">
-            <div class="col-3">
-                <img src="project_gif/2013-smooth-cameras.gif" class="project_gif">
+        <div class="row_project">
+            <div class="row_project_picture">
+                <img src="project_gif/2013-smooth-cameras.gif" class="row_project_picture_gif">
             </div>
-            <div class="col-4">
+            <div class="row_project_papers">
                 <b>Smooth Camera Models: Modeling and Calibration</b><br>
                 <ul>
                     <li>
@@ -320,14 +288,16 @@
 
     </div>
 
+    <!--
     <div class=" footer ">
         Website hosted by GitHub<br>
         Last updated on August 23, 2021
     </div>
-
--->
+    -->
 
     <script src="/app/js/script.js"></script>
+    <script src="/app/js/page_id.js"></script>
+    
 
 </body>
 

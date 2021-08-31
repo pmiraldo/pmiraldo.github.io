@@ -1,20 +1,28 @@
 .header{
 
-    position: absolute;
+    overflow: hidden;
+    position: fixed;
+
     width: 100%;
     font-size: $font_med;
-    z-index: 10;
+    opacity: 0.85;
+    z-index: 100;
+
 
     nav{
         padding: 0.3125rem 1.25rem;
         background-color: $theme_color_background;
-        opacity: 0.85;
         border-bottom: 0.125rem solid $color_text;
+
+        padding-right: #{"calc(100px - ( max(0px, ( 1500px - 100% ) ) / 10 ) )"};
+        padding-left: #{"calc(100px - ( max(0px, ( 1500px - 100% ) ) / 10 ) )"};
 
         @include breakpoint_down(small){
             margin: 5px;
             border-radius: 5px;
             height: 50px;
+
+            padding: 0.3125rem 1.25rem;
         }
 
         &.remove_radius{
@@ -88,7 +96,7 @@
             border-radius: 0.3125rem;
             background-color: $theme_color_link_selected_background;
             color: $theme_color_link_selected_text;
-            font-weight: bold;
+            // font-weight: bold;
         }
     }
 
@@ -121,7 +129,7 @@
             font-weight: bold;
         }
 
-        &.close{
+        &.closed{
             display: none;
         }
     }
