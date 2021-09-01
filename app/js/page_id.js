@@ -7,9 +7,6 @@ const id_page_students_down = document.querySelector("#go_students_down");
 
 window.onload = function(){
 
-    console.log(window.location.hostname)
-    console.log(window.location.pathname)
-
     if (window.location.pathname == "/index.html" || window.location.pathname == "/" ) {
         id_page_home.classList.add("selected");
         id_page_pub.classList.remove("selected");

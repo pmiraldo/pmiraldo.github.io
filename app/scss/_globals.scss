@@ -14,8 +14,13 @@ body{
     font-family: Helvetica;
     color: $color_text;
     font-size: $font_med;
+
+
 }
 
+.stop_scroll{
+    overflow: hidden;
+}
 
 // geeneral links
 a, a:visited, a:hover{

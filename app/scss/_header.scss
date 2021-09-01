@@ -3,22 +3,28 @@
     overflow: hidden;
     position: fixed;
 
+    transition: opacity 200ms ease-in-out;
+
     width: 100%;
     font-size: $font_med;
     opacity: 0.85;
     z-index: 100;
 
+    &_show_down_menu{
+        opacity: 0.95
+    }
 
     nav{
-        padding: 0.3125rem 1.25rem;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
         background-color: $theme_color_background;
         border-bottom: 0.125rem solid $color_text;
-
-        padding-right: #{"calc(100px - ( max(0px, ( 1500px - 100% ) ) / 10 ) )"};
-        padding-left: #{"calc(100px - ( max(0px, ( 1500px - 100% ) ) / 10 ) )"};
+        padding-left: #{"calc(50px - ( max(0px, ( 1500px - 100% ) ) / 20 ) )"};
+        padding-right: #{"calc(50px - ( max(0px, ( 1500px - 100% ) ) / 20 ) )"};    
 
         @include breakpoint_down(small){
             margin: 5px;
+            margin-bottom: 0;
             border-radius: 5px;
             height: 50px;
 
@@ -108,7 +114,7 @@
         padding-bottom: 10px;
         border-end-end-radius: 5px;
         border-end-start-radius: 5px;
-        background-color: $theme_color_text_front;
+        background-color: $theme_color_background;
         text-align: center;
 
         a{
@@ -116,10 +122,10 @@
             transform: translate(10%,0);
             padding-left: 5px;
             padding-right: 5px;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            padding-top: 15px;
+            padding-bottom: 15px;
             display: block;
-            color: $theme_color_background;
+            color: $theme_color_text_front;
         }
 
         a.selected{
