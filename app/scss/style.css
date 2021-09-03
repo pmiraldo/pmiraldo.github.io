@@ -220,15 +220,17 @@ dl dd {
 .header {
   overflow: hidden;
   position: fixed;
-  -webkit-transition: opacity 200ms ease-in-out;
-  transition: opacity 200ms ease-in-out;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+  opacity: 0.85;
   width: 100%;
   font-size: 1.125rem;
-  opacity: 0.85;
   z-index: 100;
 }
 
 .header_show_down_menu {
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
   opacity: 0.95;
 }
 
@@ -237,24 +239,26 @@ dl dd {
   padding-bottom: 0.3125rem;
   background-color: #1c2536;
   border-bottom: 0.125rem solid black;
-  padding-left: calc(50px - ( max(0px, ( 1500px - 100% ) ) / 20 ) );
-  padding-right: calc(50px - ( max(0px, ( 1500px - 100% ) ) / 20 ) );
+  padding-left: max(50px - ( max(0px, ( 1500px - 100% ) ) / 20 ), (100% - 1400px)/2 );
+  padding-right: max(50px - ( max(0px, ( 1500px - 100% ) ) / 20 ), (100% - 1400px)/2 );
 }
 
 @media (max-width: 39.9375rem) {
   .header nav {
     margin: 5px;
-    margin-bottom: 0;
+    -webkit-transition: border-radius 100ms ease-in-out;
+    transition: border-radius 100ms ease-in-out;
     border-radius: 5px;
-    height: 50px;
+    height: 55px;
     padding: 0.3125rem 1.25rem;
+    border: 2px solid black;
   }
 }
 
 .header nav.remove_radius {
-  margin-bottom: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
+  margin-bottom: 0;
+  border-end-start-radius: 0;
+  border-end-end-radius: 0;
 }
 
 .header_logo img {
@@ -318,6 +322,9 @@ dl dd {
 }
 
 .header_menu_links {
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
   margin-left: 5px;
   margin-right: 5px;
   padding-top: 10px;
