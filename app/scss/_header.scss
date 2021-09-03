@@ -19,18 +19,18 @@
     nav{
         padding-top: 0.3125rem;
         padding-bottom: 0.3125rem;
-        background-color: $theme_color_background;
-        border-bottom: 0.125rem solid $color_text;
         padding-left: #{"max(50px - ( max(0px, ( 1500px - 100% ) ) / 20 , (100% - 1400px)/2 )"};
         padding-right: #{"max(50px - ( max(0px, ( 1500px - 100% ) ) / 20 , (100% - 1400px)/2 )"};
+        border-bottom: 0.125rem solid $color_text;
+        background-color: $theme_color_background;
 
         @include breakpoint_down(small){
             margin: 5px;
+            padding: 0.3125rem 1.25rem;
+            border: 2px solid $color_text;
             transition: border-radius 100ms ease-in-out;
             border-radius: 5px;
             height: 55px;
-            padding: 0.3125rem 1.25rem;
-            border: 2px solid $color_text;
         }
 
         &.remove_radius{
