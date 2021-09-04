@@ -1,0 +1,61 @@
+
+.background_light{
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    background-color: $theme_second_background_color;
+
+    @include breakpoint_down(small){
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+}
+
+.body_intro {
+    padding-top: 3.75rem;
+    padding-bottom: 0;
+    padding-right: #{"calc(6.25rem - ( max(0, ( 93.75rem - 100% ) ) / 10 ) )"};
+    padding-left: #{"calc(6.25rem - ( max(0, ( 93.75rem - 100% ) ) / 10 ) )"};
+    max-width: 93.75rem ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my_picture{
+    width: #{"min(80%, 11.875rem)"};
+    @include breakpoint_down(small){
+        width: #{"min(calc(100% * 0.6),11.875rem)"};
+    }
+}
+
+
+.row_bio{
+
+    &::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    &_picture_contact {
+        float: left;
+        width: 30%;
+        @include breakpoint_down(small){
+            width: 100%;
+            float: center;
+            padding-bottom: 1.875rem;
+        }       
+    }
+
+    &_papers {
+        float: left;
+        width: 65%;
+        @include breakpoint_down(small){
+            width: 100%;
+        }
+        padding-left: 10.3125rem;
+    }
+
+
+}

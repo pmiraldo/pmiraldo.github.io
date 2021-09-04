@@ -1,0 +1,73 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+    font-family: Helvetica;
+    color: $color_text;
+    font-size: $font_med;
+}
+
+.stop_scroll{
+    overflow: hidden;
+}
+
+// geeneral links
+a, a:visited, a:hover{
+    text-decoration: none;
+    color: $color_text;
+}
+
+// flexbox styly
+
+.flex{
+    display: flex;
+
+    &-jc-sb{
+        justify-content: space-between;
+    }
+
+    &-jc-c{
+        justify-content: center;
+    }
+
+    &-ai-c{
+        align-items: center;
+    }
+}
+
+
+// items and enumarates
+
+ul li {
+    padding: 0;
+    margin: 0.625rem 0 0 0;
+}
+
+ol li {
+    padding: 0;
+    margin: 0.9375rem 0 0 0;
+}
+
+
+// mobile vs desktop view
+.hide_for_mobile{
+    @include breakpoint_down(small){
+        display: none;
+    }
+}
+
+.hide_for_desktop{
+    @include breakpoint_up(medium){
+        display: none;
+    }
+}

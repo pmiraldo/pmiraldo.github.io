@@ -1,57 +1,44 @@
-<!-- 
-  Pedro Miraldo
-  Instituto Superior Tecnico, Lisboa
-  pedrosdm@gmail.com
-  -->
 <html>
 
 <head>
     <title>Pedro Miraldo | IST</title>
     <link REL="SHORTCUT ICON" HREF="./figures/ico.ico">
-    </link>
-    <link type="text/css" rel="stylesheet" href="body.css">
-    <link type="text/css" rel="stylesheet" href="header_footer.css">
-    </link>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
-        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-    </link>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="./pmiraldo.js"></script>
+    <link rel="stylesheet" href="/app/scss/style.css" class="css">
 </head>
 
-<body>
+<body id="body_id">
 
-    <div class="header" id="myTopnav">
-        <ul>
-            <li>
-                <img src="figures/IST_C_RGB_NEG.png" alt="Istitution Logo" height="40px">
-            </li>
-            <li>
-                <a class="active" href="./index.html">Home</a>
-            </li>
-            <li>
-                <a href="./publications.html">Publications</a>
-            </li>
-            <li>
-                <a href="./students.html">Students</a>
-            </li>
-            <li>
-                <a href="./PMiraldoCV.pdf">CV</a>
-            </li>
-        </ul>
-        <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">
-            <div class="option-header" onclick="iconTrans(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-        </a>
-    </div>
+    <header id="header_id" class="header flex flex-ai-c">
+        <nav id="nav_id" class="flex flex-jc-sb flex-ai-c">
+                <a id="hamburguer_button" class="header_menu hide_for_desktop">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                <a href="index.html" class="header_logo">
+                    <img src="figures/IST_C_RGB_NEG.png" , alt="institutional-logo">
+                </a>
+                <div class="header_links hide_for_mobile">
+                    <a id="go_home" href="index.html">Home</a>
+                    <a id="go_publications" href="publications.html">Publications</a>
+                    <a id="go_students" href="students.html">Students</a>
+                    <a href="PMiraldoCV.pdf">CV</a>
+                </div>
+        </nav>
+        <div id="hamburguer_menu_link" class="header_menu_links header_menu_links_closed hide_for_desktop">
+            <a id="go_home" href="index.html">Home</a>
+            <a id="go_publications" href="publications.html">Publications</a>
+            <a id="go_students" href="students.html">Students</a>
+            <a href="PMiraldoCV.pdf">CV</a>
+        </div>
+    </header>
+
 
     <div class="background_light">
         <div class="body_intro">
-            <div class="row" id="home">
-                <div class="col-1">
+            <div class="row_bio" id="home">
+                <div class="row_bio_picture_contact">
                     <img src="figures/myPic.png" class="my_picture" alt="Pedro Miraldo"><br><br>
                     <b style="font-size:30">Pedro Miraldo</b><br>
                     Instituto Superior T&eacute;cnico<br>
@@ -73,7 +60,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="row_bio_info">
                     <p>
                         I am a second-stage Researcher (comparable to Assistant Research Professor) at the Institute for
                         Systems & Robotics and the Department of Electrical & Computer Engineering, IST Instituto
@@ -109,15 +96,16 @@
         </div>
     </div>
 
-    <div class="body_general">
+
+    <div class="selected_projects">
 
         <b style="font-size:25">Selected Projects and Publications:</b>
         <br><br><br>
-        <div class="row">
-            <div class="col-3">
-                <img src="project_gif/2021-active-lines-sfm.gif" class="project_gif">
+        <div class="row_project">
+            <div class="row_project_picture">
+                <img src="project_gif/2021-active-lines-sfm.gif">
             </div>
-            <div class="col-4">
+            <div class="row_project_papers">
                 <b>Active Structure-from-Motion using Lines:</b><br>
                 <ul>
                     <li>
@@ -148,13 +136,14 @@
             </div>
         </div>
 
-        <br><hr><br>
+        <br>
+        <hr><br>
 
-        <div class="row">
-            <div class="col-3">
-                <img src="project_gif/2020-line-intersections-reg.gif" class="project_gif">
+        <div class="row_project">
+            <div class="row_project_picture">
+                <img src="project_gif/2020-line-intersections-reg.gif" class="row_project_picture_gif">
             </div>
-            <div class="col-4">
+            <div class="row_project_papers">
                 <b>Intersecting Lines for 3D Registration:</b><br>
                 <ul>
                     <li>
@@ -176,18 +165,19 @@
                         [<a href="https://arxiv.org/abs/2105.11196">arXiv</a>,
                         <a href="https://doi.org/10.1007/978-3-030-69525-5_18">video</a>,
                         <a href="https://doi.org/10.1007/978-3-030-69525-5_18">doi</a>]
-                    </li> 
+                    </li>
                 </ul>
             </div>
         </div>
 
-        <br><hr><br>
+        <br>
+        <hr><br>
 
-        <div class="row">
-            <div class="col-3">
-                <img src="project_gif/2020-regnet.gif" class="project_gif">
+        <div class="row_project">
+            <div class="row_project_picture">
+                <img src="project_gif/2020-regnet.gif" class="row_project_picture_gif">
             </div>
-            <div class="col-4">
+            <div class="row_project_papers">
                 <b>3D Registration using Deep Learning:</b><br>
                 <ul>
                     <li>
@@ -203,17 +193,19 @@
             </div>
         </div>
 
-        <br><hr><br>
+        <br>
+        <hr><br>
 
-        <div class="row">
-            <div class="col-3">
-                <img src="project_gif/2021-GEM.gif" class="project_gif">
+        <div class="row_project">
+            <div class="row_project_picture">
+                <img src="project_gif/2021-GEM.gif" class="row_project_picture_gif">
             </div>
-            <div class="col-4">
+            <div class="row_project_papers">
                 <b>Generalized Essential Matrix</b><br>
                 <ul>
                     <li>
-                        <i>On the Generalized Essential Matrix Correction: An efficient solution to the problem and its applications</i>, from<br>
+                        <i>On the Generalized Essential Matrix Correction: An efficient solution to the problem and its
+                            applications</i>, from<br>
                         <b>Pedro Miraldo</b> and Joao R. Cardoso (2020),<br>
                         Journal of Mathematical Imaging and Vision (JMIV).
                         [<a href="https://arxiv.org/abs/1709.06328">arXiv:1709.06328</a>,
@@ -230,13 +222,14 @@
             </div>
         </div>
 
-        <br><hr><br>
+        <br>
+        <hr><br>
 
-        <div class="row">
-            <div class="col-3">
-                <img src="project_gif/2021-general-pose-points-lines.gif" class="project_gif">
+        <div class="row_project">
+            <div class="row_project_picture">
+                <img src="project_gif/2021-general-pose-points-lines.gif" class="row_project_picture_gif">
             </div>
-            <div class="col-4">
+            <div class="row_project_papers">
                 <b>Using Lines and Points for General Camera Pose Estimation:</b><br>
                 <ul>
                     <li>
@@ -268,13 +261,14 @@
             </div>
         </div>
 
-        <br><hr><br>
+        <br>
+        <hr><br>
 
-        <div class="row">
-            <div class="col-3">
-                <img src="project_gif/2013-smooth-cameras.gif" class="project_gif">
+        <div class="row_project">
+            <div class="row_project_picture">
+                <img src="project_gif/2013-smooth-cameras.gif" class="row_project_picture_gif">
             </div>
-            <div class="col-4">
+            <div class="row_project_papers">
                 <b>Smooth Camera Models: Modeling and Calibration</b><br>
                 <ul>
                     <li>
@@ -285,7 +279,8 @@
                         <a href="pub/2012tpami_suppmat.pdf">appendix</a>,
                         <a href="https://doi.org/10.1109/TPAMI.2012.258">doi</a>]
                     <li>
-                        <i>Point-based Calibration Using a Parametric Representation of General Imaging Models</i>, from<br>
+                        <i>Point-based Calibration Using a Parametric Representation of General Imaging Models</i>,
+                        from<br>
                         <b>P. Miraldo</b>, H. Araujo, and J. Queiro (2011),<br>
                         IEEE Int'l Conf. Computer Vision (ICCV).
                         [<a href="pub/2011iccv.pdf">pdf</a>,
@@ -298,10 +293,16 @@
 
     </div>
 
+    <!--
     <div class=" footer ">
         Website hosted by GitHub<br>
         Last updated on August 23, 2021
     </div>
+    -->
+
+    <script src="/app/js/script.js"></script>
+    <script src="/app/js/page_id.js"></script>
+
 
 </body>
 

@@ -1,0 +1,54 @@
+.selected_projects {
+    padding-top: 3.125rem;
+    padding-bottom: 0;
+    padding-right: #{"calc(6.25rem - ( max(0, ( 93.75rem - 100% ) ) / 10 ) )"};
+    padding-left: #{"calc(6.25rem - ( max(0, ( 93.75rem - 100% ) ) / 10 ) )"};
+    max-width: 93.75rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include breakpoint_down(small){
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+}
+
+.row_project{
+
+    &::after {
+        content: "";
+        clear: both;
+        display: block; 
+    }
+
+    &_picture {
+        padding: block;
+        float: left;
+        width: 30%;
+        text-align: left;  
+
+        @include breakpoint_down(small){
+            width: 100%;
+            text-align: center; 
+            padding-bottom: 2.5rem;
+        }
+     
+        img{
+            width: #{"min(95%,15rem)"};
+        }
+    }
+
+    &_papers {
+        padding: block;
+        float: left;
+        width: 65%;
+        text-align: left;
+
+        @include breakpoint_down(small){
+            width: 100%;
+        }        
+        padding-left: 0.9375rem;
+    }
+
+
+}
