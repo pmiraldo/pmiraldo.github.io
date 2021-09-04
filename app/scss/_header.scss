@@ -2,41 +2,48 @@
 
     overflow: hidden;
     position: fixed;
-
-    transition: opacity 300ms ease-in-out;
-    opacity: 0.85;
-
     width: 100%;
-    font-size: $font_med;
-    
     z-index: 100;
 
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    border-bottom: 0.125rem solid $color_text;
+
+    background-color: $theme_color_background;
+    font-size: $font_med;
+        
+    transition: opacity 300ms ease-in-out;
+    opacity: 0.85;
+    
+    @include breakpoint_down(small){
+        margin: 0.3125rem;
+        width: #{"calc(100% - 0.625rem)"};
+        padding: 0.3125rem 1.25rem;
+        border: 0.125rem solid $color_text;
+        border-radius: 0.3125rem;
+    }
+
+    &.remove_radius{
+        margin-bottom: 0;
+    }
+
     &_show_down_menu{
+        display: block;
         transition: opacity 300ms ease-in-out;
-        opacity: 0.95
+        opacity: 0.95;
     }
 
     nav{
-        padding-top: 0.3125rem;
-        padding-bottom: 0.3125rem;
-        padding-left: #{"max(50px - ( max(0px, ( 1500px - 100% ) ) / 20 , (100% - 1400px)/2 )"};
-        padding-right: #{"max(50px - ( max(0px, ( 1500px - 100% ) ) / 20 , (100% - 1400px)/2 )"};
-        border-bottom: 0.125rem solid $color_text;
-        background-color: $theme_color_background;
+        width: 100%;
+        padding-right: #{"calc(3.125rem - ( max(0, ( 93.75rem - 100% ) ) / 20 ) )"};
+        padding-left: #{"calc(3.125rem - ( max(0, ( 93.75rem - 100% ) ) / 20 ) )"};
+        max-width: 93.75rem;
+        margin-left: auto;
+        margin-right: auto;
 
         @include breakpoint_down(small){
-            margin: 5px;
-            padding: 0.3125rem 1.25rem;
-            border: 2px solid $color_text;
-            transition: border-radius 100ms ease-in-out;
-            border-radius: 5px;
-            height: 55px;
-        }
-
-        &.remove_radius{
-            margin-bottom: 0;
-            border-end-start-radius: 0;
-            border-end-end-radius: 0;
+            padding-top: 0.3125rem;
+            padding-bottom: 0.3125rem;
         }
     }
 
@@ -47,7 +54,7 @@
 
         @include breakpoint_down(small){
             img{
-                height: 30px;
+                height: 1.875rem;
             }
         }
     }
@@ -69,17 +76,14 @@
                 -webkit-transform: rotate(-45deg) translate(-0.25rem, 0.25rem);
                 transform: rotate(-45deg) translate(-0.25rem, 0.25rem);
             }
-            
             > span:nth-child(2){
                 opacity: 0;
             }
-
             > span:last-child{
                 -webkit-transform: rotate(45deg) translate(-0.25rem, -0.25rem);
                 transform: rotate(45deg) translate(-0.25rem, -0.25rem);
             }
         }
-
     }
 
     &_links{
@@ -107,38 +111,30 @@
     }
 
     &_menu_links{
-
-        border-bottom: 2px solid $color_text;
-        border-right: 2px solid $color_text;
-        border-left: 2px solid $color_text;
-        margin-left: 5px;
-        margin-right: 5px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-end-end-radius: 5px;
-        border-end-start-radius: 5px;
-        background-color: $theme_color_background;
+        margin-top: 0.625rem;
+        border-top: 0.125rem solid $color_text;
+        padding-top: 0.625rem;
         text-align: center;
 
         a{
             width: 80%;
             transform: translate(10%,0);
-            padding-left: 5px;
-            padding-right: 5px;
-            padding-top: 15px;
-            padding-bottom: 15px;
+            padding-left: 0.3125rem;
+            padding-right: 0.3125rem;
+            padding-top: 0.9375rem;
+            padding-bottom: 0.9375rem;
             display: block;
             color: $theme_color_text_front;
         }
 
         a.selected{
-            border-radius: 5px;
+            border-radius: 0.3125rem;
             background-color: $theme_color_link_selected_background;
             color: $theme_color_link_selected_text;
             font-weight: bold;
         }
 
-        &.closed{
+        &_closed{
             display: none;
         }
     }
