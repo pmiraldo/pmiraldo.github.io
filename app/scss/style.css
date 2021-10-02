@@ -168,6 +168,10 @@ ol li {
   }
 }
 
+.pub a, .pub a:visited, .pub a:hover {
+  text-decoration: underline;
+}
+
 .selected_projects {
   padding-top: 3.125rem;
   padding-bottom: 0;
@@ -183,6 +187,10 @@ ol li {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
+}
+
+.selected_projects a, .selected_projects a:visited, .selected_projects a:hover {
+  text-decoration: underline;
 }
 
 .row_project::after {
