@@ -1,6 +1,7 @@
 .selected_projects {
+
     max-width: 93.75rem;
-    padding-top: 3.125rem;
+    padding-top: 2.5rem;
     padding-bottom: 0;
     padding-right: 1.25rem;
     padding-left: 1.25rem;
@@ -14,6 +15,13 @@
     a, a:visited, a:hover{
         text-decoration: underline;
     }
+
+    @include breakpoint_down(small){
+        width: 100%;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }        
+    
 }
 
 .row_project{
@@ -49,8 +57,7 @@
 
         @include breakpoint_down(small){
             width: 100%;
-        }        
-        padding-left: 0.9375rem;
+        } 
     }
 
 

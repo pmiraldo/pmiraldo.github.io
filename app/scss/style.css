@@ -185,7 +185,7 @@ ol li {
 
 .selected_projects {
   max-width: 93.75rem;
-  padding-top: 3.125rem;
+  padding-top: 2.5rem;
   padding-bottom: 0;
   padding-right: 1.25rem;
   padding-left: 1.25rem;
@@ -202,6 +202,14 @@ ol li {
 
 .selected_projects a, .selected_projects a:visited, .selected_projects a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 39.9375rem) {
+  .selected_projects {
+    width: 100%;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
 }
 
 .row_project::after {
@@ -234,7 +242,6 @@ ol li {
   float: left;
   width: 65%;
   text-align: left;
-  padding-left: 0.9375rem;
 }
 
 @media (max-width: 39.9375rem) {
@@ -260,8 +267,8 @@ ol li {
 
 .body_intro {
   max-width: 93.75rem;
-  padding-top: 3.125rem;
-  padding-bottom: 0;
+  padding-top: 3.438rem;
+  padding-bottom: 1.25rem;
   padding-right: 1.25rem;
   padding-left: 1.25rem;
   margin-left: auto;
@@ -321,7 +328,7 @@ ol li {
   position: fixed;
   width: 100%;
   z-index: 100;
-  padding-top: 0.3125rem;
+  padding-top: 0px;
   padding-bottom: 0.3125rem;
   border-bottom: 0.125rem solid black;
   background-color: #1c2536;
