@@ -258,16 +258,9 @@ ol li {
   background-color: #e0e6f0;
 }
 
-@media (max-width: 39.9375rem) {
-  .background_light {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-}
-
 .body_intro {
   max-width: 93.75rem;
-  padding-top: 3.438rem;
+  padding-top: 4.688rem;
   padding-bottom: 1.25rem;
   padding-right: 1.25rem;
   padding-left: 1.25rem;
@@ -279,6 +272,14 @@ ol li {
   .body_intro {
     padding-left: calc(1.25rem - ( ( 1.25rem + 93.75rem - 100% ) / 50 ) );
     padding-right: calc(1.25rem - ( ( 1.25rem + 93.75rem - 100% ) / 50 ) );
+  }
+}
+
+@media (max-width: 39.9375rem) {
+  .body_intro {
+    padding-top: 4.688rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 }
 
@@ -306,7 +307,18 @@ ol li {
 @media (max-width: 39.9375rem) {
   .row_bio_picture_contact {
     width: 100%;
-    float: center;
+    padding-bottom: 1.875rem;
+  }
+}
+
+.row_bio_bio {
+  float: left;
+  width: 65%;
+}
+
+@media (max-width: 39.9375rem) {
+  .row_bio_bio {
+    width: 100%;
     padding-bottom: 1.875rem;
   }
 }
@@ -328,7 +340,7 @@ ol li {
   position: fixed;
   width: 100%;
   z-index: 100;
-  padding-top: 0px;
+  padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   border-bottom: 0.125rem solid black;
   background-color: #1c2536;
@@ -342,6 +354,7 @@ ol li {
   .header {
     margin: 0.3125rem;
     width: calc(100% - 0.625rem);
+    height: 60px;
     padding: 0.3125rem 1.25rem;
     border: 0.125rem solid black;
     border-radius: 0.3125rem;
@@ -390,7 +403,7 @@ ol li {
 
 @media (max-width: 39.9375rem) {
   .header_logo img {
-    height: 1.875rem;
+    height: 2.063rem;
   }
 }
 
