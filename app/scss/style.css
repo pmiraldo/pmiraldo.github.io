@@ -100,7 +100,7 @@ ol li {
 
 .student {
   position: relative;
-  width: 8.125rem;
+  width: 12.5rem;
   padding: 0.625rem;
   display: inline-block;
   z-index: 2;
@@ -108,7 +108,8 @@ ol li {
 
 @media (max-width: 39.9375rem) {
   .student {
-    width: 2.25rem;
+    width: 9.375rem;
+    padding: 0.313;
   }
 }
 
@@ -152,13 +153,6 @@ ol li {
   font-size: 0.875rem;
   padding: 0.75rem 1.5rem;
   z-index: 2;
-}
-
-@media screen and (max-width: 760.3125rem) {
-  .student {
-    width: 13.125rem;
-    padding: 0;
-  }
 }
 
 .pub {
