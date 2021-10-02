@@ -354,29 +354,24 @@ ol li {
   .header {
     margin: 0.3125rem;
     width: calc(100% - 0.625rem);
-    height: 60px;
     padding: 0.3125rem 1.25rem;
     border: 0.125rem solid black;
     border-radius: 0.3125rem;
   }
 }
 
-.header.remove_radius {
+.header_remove_radius {
   margin-bottom: 0;
 }
 
 .header_show_down_menu {
   display: block;
-  -webkit-transition: opacity 300ms ease-in-out;
-  transition: opacity 300ms ease-in-out;
   opacity: 0.95;
 }
 
 .header nav {
   width: 100%;
   max-width: 93.75rem;
-  padding-top: 0;
-  padding-bottom: 0;
   padding-right: 1.25rem;
   padding-left: 1.25rem;
   margin-left: auto;
