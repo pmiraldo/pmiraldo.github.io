@@ -222,7 +222,7 @@ ol li {
   padding: block;
   float: left;
   width: 30%;
-  text-align: left;
+  text-align: center;
 }
 
 @media (max-width: 39.9375rem) {
