@@ -36,7 +36,7 @@
         padding: block;
         float: left;
         width: 30%;
-        text-align: left;  
+        text-align: center;  
 
         @include breakpoint_down(small){
             width: 100%;
