@@ -100,7 +100,7 @@ ol li {
 
 .student {
   position: relative;
-  width: 8.125rem;
+  width: 12.5rem;
   padding: 0.625rem;
   display: inline-block;
   z-index: 2;
@@ -108,7 +108,8 @@ ol li {
 
 @media (max-width: 39.9375rem) {
   .student {
-    width: 2.25rem;
+    width: 9.375rem;
+    padding: 0.313;
   }
 }
 
@@ -154,13 +155,6 @@ ol li {
   z-index: 2;
 }
 
-@media screen and (max-width: 760.3125rem) {
-  .student {
-    width: 13.125rem;
-    padding: 0;
-  }
-}
-
 .pub {
   max-width: 93.75rem;
   padding-top: 3.125rem;
@@ -191,7 +185,7 @@ ol li {
 
 .selected_projects {
   max-width: 93.75rem;
-  padding-top: 3.125rem;
+  padding-top: 2.5rem;
   padding-bottom: 0;
   padding-right: 1.25rem;
   padding-left: 1.25rem;
@@ -210,6 +204,14 @@ ol li {
   text-decoration: underline;
 }
 
+@media (max-width: 39.9375rem) {
+  .selected_projects {
+    width: 100%;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
 .row_project::after {
   content: "";
   clear: both;
@@ -220,7 +222,7 @@ ol li {
   padding: block;
   float: left;
   width: 30%;
-  text-align: left;
+  text-align: center;
 }
 
 @media (max-width: 39.9375rem) {
@@ -240,7 +242,6 @@ ol li {
   float: left;
   width: 65%;
   text-align: left;
-  padding-left: 0.9375rem;
 }
 
 @media (max-width: 39.9375rem) {
@@ -257,17 +258,10 @@ ol li {
   background-color: #e0e6f0;
 }
 
-@media (max-width: 39.9375rem) {
-  .background_light {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-}
-
 .body_intro {
   max-width: 93.75rem;
-  padding-top: 3.125rem;
-  padding-bottom: 0;
+  padding-top: 4.688rem;
+  padding-bottom: 1.25rem;
   padding-right: 1.25rem;
   padding-left: 1.25rem;
   margin-left: auto;
@@ -278,6 +272,14 @@ ol li {
   .body_intro {
     padding-left: calc(1.25rem - ( ( 1.25rem + 93.75rem - 100% ) / 50 ) );
     padding-right: calc(1.25rem - ( ( 1.25rem + 93.75rem - 100% ) / 50 ) );
+  }
+}
+
+@media (max-width: 39.9375rem) {
+  .body_intro {
+    padding-top: 4.688rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 }
 
@@ -305,9 +307,31 @@ ol li {
 @media (max-width: 39.9375rem) {
   .row_bio_picture_contact {
     width: 100%;
-    float: center;
     padding-bottom: 1.875rem;
   }
+}
+
+.row_bio_bio {
+  float: left;
+  width: 65%;
+}
+
+@media (max-width: 39.9375rem) {
+  .row_bio_bio {
+    width: 100%;
+    padding-bottom: 1.875rem;
+  }
+}
+
+.row_bio_bio_news p {
+  margin-top: 1.25rem;
+  margin-bottom: 0;
+  color: #1e6ddb;
+}
+
+.row_bio_bio_news ul {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .row_bio_papers {
@@ -347,22 +371,18 @@ ol li {
   }
 }
 
-.header.remove_radius {
+.header_remove_radius {
   margin-bottom: 0;
 }
 
 .header_show_down_menu {
   display: block;
-  -webkit-transition: opacity 300ms ease-in-out;
-  transition: opacity 300ms ease-in-out;
   opacity: 0.95;
 }
 
 .header nav {
   width: 100%;
   max-width: 93.75rem;
-  padding-top: 0;
-  padding-bottom: 0;
   padding-right: 1.25rem;
   padding-left: 1.25rem;
   margin-left: auto;
@@ -389,7 +409,7 @@ ol li {
 
 @media (max-width: 39.9375rem) {
   .header_logo img {
-    height: 1.875rem;
+    height: 2.063rem;
   }
 }
 

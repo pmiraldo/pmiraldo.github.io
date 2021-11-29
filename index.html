@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/app/scss/style.css" class="css">
 </head>
 
-<body>
+<body id="body_id">
 
     <header id="header_id" class="header flex flex-ai-c">
         <nav id="nav_id" class="flex flex-jc-sb flex-ai-c">
@@ -33,8 +33,7 @@
             <a href="PMiraldoCV.pdf">CV</a>
         </div>
     </header>
-
-
+    
     <div class="background_light">
         <div class="body_intro">
             <div class="row_bio" id="home">
@@ -44,11 +43,10 @@
                     Instituto Superior T&eacute;cnico<br>
                     University of Lisbon, Portugal<br>
                     pedro (dot) miraldo (at) tecnico (dot) ulisboa (dot) pt
-                    </p>
-                    <div>
+                    <div style="padding-top:0.625rem">
                         <a href="https://scholar.google.com/citations?user=e4ZW_fgAAAAJ&hl=en">
                             <img src="https://scholar.google.pt/favicon.ico" style="width:1em;margin-right:.5em;"
-                                alt="google scholar icon">google scholar (e4ZW_fgAAAAJ&hl)
+                                alt="google scholar icon">google scholar
                         </a>
                     </div>
                     <div itemscope itemtype="https://schema.org/Person">
@@ -56,12 +54,12 @@
                             href="https://orcid.org/0000-0002-8551-2448" target="orcid.widget" rel="noopener noreferrer"
                             style="vertical-align:top;">
                             <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
-                                style="width:1em;margin-right:.5em;" alt="ORCID iD icon">orcid.org/0000-0002-8551-2448
+                                style="width:1em;margin-right:.5em;" alt="ORCID iD icon">orcid.org
                         </a>
                     </div>
                 </div>
-                <div class="row_bio_info">
-                    <p>
+                <div class="row_bio_bio">
+                    <p style="margin-top: 0;">
                         I am a second-stage Researcher (comparable to Assistant Research Professor) at the Institute for
                         Systems & Robotics and the Department of Electrical & Computer Engineering, IST Instituto
                         Superior T&eacute;cnico, Lisboa. From 2018 to 2019, I was a postdoctoral associate at KTH Royal
@@ -78,30 +76,36 @@
                         My main research topics are 3D computer vision, robot vision, active vision. I am a member of
                         The Institute of Electrical and Electronics Engineers (IEEE).
                     </p>
-                    <p style="margin-top: 40px; margin-bottom: 0;">
-                        <b style="color:#1e6ddb"><i>News:</i></b>
-                    </p>
-                    <ul style="margin-top: 0; margin-bottom: 0;">
-                        <li>
-                            I am teaching <a href="https://fenix.tecnico.ulisboa.pt/disciplinas/IASD/2021-2022/1-semestre">Artificial Intelligence</a> in the fall, 2021;
-                        </li>
-                        <li>
-                            A paper accepted in the <i>Elsevier Journal of Computational and Applied Mathematics</i>;
-                        </li>
-                        <li>
-                            A paper accepted in the <i>IEEE Transactions on Robotics</i>.
-                        </li>
-                    </ul>
+                    <div class="row_bio_bio_news">
+                        <p>
+                            <b><i>News:</i></b>
+                        </p>
+                        <ul>
+                            <li>
+                                I am teaching <a href="https://fenix.tecnico.ulisboa.pt/disciplinas/IASD/2021-2022/1-semestre">Artificial Intelligence</a> in the fall, 2021;
+                            </li>
+                            <li>
+                                A paper accepted in the <i>Elsevier Journal of Computational and Applied Mathematics</i>;
+                            </li>
+                            <li>
+                                A paper accepted in the <i>IEEE Transactions on Robotics</i>.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     
+    
 
     <div class="selected_projects">
 
-        <b style="font-size:25">Selected Projects and Publications:</b>
-        <br><br><br>
+        <p>
+            <b style="font-size:25;">Selected Projects and Publications:</b>
+        </p>
+
+        <br><br>
         <div class="row_project">
             <div class="row_project_picture">
                 <img src="project_gif/2021-active-lines-sfm.gif">
@@ -294,16 +298,8 @@
 
     </div>
 
-    <!--
-    <div class=" footer ">
-        Website hosted by GitHub<br>
-        Last updated on August 23, 2021
-    </div>
-    -->
-
     <script src="/app/js/script.js"></script>
     <script src="/app/js/page_id.js"></script>
-
 
 </body>
 

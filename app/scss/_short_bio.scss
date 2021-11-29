@@ -5,17 +5,12 @@
     padding-bottom: 0;
     padding-left: 0;
     background-color: $theme_second_background_color;
-
-    @include breakpoint_down(small){
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
-    }
 }
 
 .body_intro {
     max-width: 93.75rem;
-    padding-top: 3.125rem;
-    padding-bottom: 0;
+    padding-top: 4.688rem;
+    padding-bottom: 1.25rem;
     padding-right: 1.25rem;
     padding-left: 1.25rem;
     @media only screen and (max-width: #{calc(1.25rem + 93.75rem)}) {
@@ -24,6 +19,12 @@
     }
     margin-left: auto;
     margin-right: auto;
+
+    @include breakpoint_down(small){
+        padding-top: 4.688rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
 }
 
 .my_picture{
@@ -47,9 +48,31 @@
         width: 30%;
         @include breakpoint_down(small){
             width: 100%;
-            float: center;
+            //float: center;
             padding-bottom: 1.875rem;
         }       
+    }
+
+    &_bio {
+        float: left;
+        width: 65%;
+        @include breakpoint_down(small){
+            width: 100%;
+            //float: center;
+            padding-bottom: 1.875rem;
+        }   
+
+        &_news {
+            p{
+                margin-top: 1.25rem;
+                margin-bottom: 0;
+                color:#1e6ddb;
+            }
+            ul {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
     }
 
     &_papers {
@@ -60,6 +83,7 @@
         }
         padding-left: 10.3125rem;
     }
-
-
 }
+
+
+  
