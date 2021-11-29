@@ -60,7 +60,19 @@
             width: 100%;
             //float: center;
             padding-bottom: 1.875rem;
-        }       
+        }   
+
+        &_news {
+            p{
+                margin-top: 1.25rem;
+                margin-bottom: 0;
+                color:#1e6ddb;
+            }
+            ul {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
     }
 
     &_papers {
