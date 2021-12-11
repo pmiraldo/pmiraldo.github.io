@@ -46,10 +46,12 @@
     &_picture_contact {
         float: left;
         width: 30%;
+        padding-right: 1.25rem;
         @include breakpoint_down(small){
             width: 100%;
             //float: center;
             padding-bottom: 1.875rem;
+            padding-right: 0;
         }       
     }
 

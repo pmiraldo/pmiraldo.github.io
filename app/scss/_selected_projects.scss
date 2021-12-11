@@ -35,7 +35,7 @@
     &_picture {
         padding: block;
         float: left;
-        width: 30%;
+        width: 20%;
         text-align: center;  
 
         @include breakpoint_down(small){
@@ -51,12 +51,14 @@
 
     &_papers {
         padding: block;
+        padding-left: 1.25rem;
         float: left;
-        width: 65%;
+        width: 80%;
         text-align: left;
 
         @include breakpoint_down(small){
             width: 100%;
+            padding-left: 0;
         } 
     }
 

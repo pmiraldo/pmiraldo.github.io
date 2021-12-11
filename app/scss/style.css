@@ -221,7 +221,7 @@ ol li {
 .row_project_picture {
   padding: block;
   float: left;
-  width: 30%;
+  width: 20%;
   text-align: center;
 }
 
@@ -239,14 +239,16 @@ ol li {
 
 .row_project_papers {
   padding: block;
+  padding-left: 1.25rem;
   float: left;
-  width: 65%;
+  width: 80%;
   text-align: left;
 }
 
 @media (max-width: 39.9375rem) {
   .row_project_papers {
     width: 100%;
+    padding-left: 0;
   }
 }
 
@@ -302,12 +304,14 @@ ol li {
 .row_bio_picture_contact {
   float: left;
   width: 30%;
+  padding-right: 1.25rem;
 }
 
 @media (max-width: 39.9375rem) {
   .row_bio_picture_contact {
     width: 100%;
     padding-bottom: 1.875rem;
+    padding-right: 0;
   }
 }
 
