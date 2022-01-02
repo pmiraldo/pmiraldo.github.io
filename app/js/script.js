@@ -3,6 +3,7 @@ const menu_down = document.querySelector("#hamburguer_menu_link");
 const nav_header = document.querySelector("#nav_id");
 const body = document.querySelector("#body_id");
 const header = document.querySelector("#header_id");
+const header_top_bar = document.querySelector("#header_top_bar")
 
 const hamburger_menu_projects = document.querySelector("#hamburguer_projects_button");
 const hamburguer_projects_link = document.querySelector("#hamburguer_projects_link");
@@ -30,13 +31,13 @@ hamburger_menu_projects.addEventListener("click", function (){
     if (hamburger_menu_projects.classList.contains("open")) {
         hamburger_menu_projects.classList.remove("open");
         hamburguer_projects_link.classList.add("header_projects_links_closed");
-        nav_header.classList.remove("more_opacity");
+        header_top_bar.classList.remove("more_opacity");
         // body.classList.remove("stop_scroll");
     }
     else {
         hamburger_menu_projects.classList.add("open");
         hamburguer_projects_link.classList.remove("header_projects_links_closed");
-        nav_header.classList.add("more_opacity");
+        header_top_bar.classList.add("more_opacity");
         // body.classList.add("stop_scroll");
     }
 });
