@@ -18,20 +18,14 @@
         opacity: 1;
     }
 
-    nav{
-
+    &_top_bar{
 
         width: 100%;
-        max-width: 93.75rem;
         border-bottom: 0.125rem solid $color_text;
         padding-top: 0.3125rem;
         padding-bottom: 0.3125rem;
         padding-right: 1.25rem;
         padding-left: 1.25rem;
-        @media only screen and (max-width: #{calc(1.25rem + 93.75rem)}) {
-            padding-left: #{"calc(1.25rem - ( ( 1.25rem + 93.75rem - 100% ) / 50 ) )"};
-            padding-right: #{"calc(1.25rem - ( ( 1.25rem + 93.75rem - 100% ) / 50 ) )"};
-        }
         margin-left: auto;
         margin-right: auto;
     
@@ -60,6 +54,17 @@
             opacity: 0.95;
         }
 
+    }
+
+    nav{
+        max-width: 93.75rem;
+
+        @media only screen and (max-width: #{calc(1.25rem + 93.75rem)}) {
+            padding-left: #{"calc(1.25rem - ( ( 1.25rem + 93.75rem - 100% ) / 50 ) )"};
+            padding-right: #{"calc(1.25rem - ( ( 1.25rem + 93.75rem - 100% ) / 50 ) )"};
+        }
+        margin-left: auto;
+        margin-right: auto;
     }
 
     &_logo{
@@ -203,8 +208,6 @@
             &:last-child{
                 padding-bottom: 0.9375rem;
             }
-
-
         }
 
         a:hover{
