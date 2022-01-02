@@ -9,8 +9,9 @@
 
 <body id="body_id">
 
-    <header id="header_id" class="header flex flex-ai-c">
-        <nav id="nav_id" class="flex flex-jc-sb flex-ai-c">
+    <header id="header_id" class="header flex flex-ai-c header_show_down_projects">
+        <div id="header_top_bar" class="header_top_bar">
+            <nav id="nav_id" class="flex flex-jc-sb flex-ai-c">
                 <a id="hamburguer_button" class="header_menu hide_for_desktop">
                     <span></span>
                     <span></span>
@@ -19,18 +20,35 @@
                 <a href="index.html" class="header_logo">
                     <img src="figures/IST_C_RGB_NEG.png" , alt="institutional-logo">
                 </a>
-                <div class="header_links hide_for_mobile">
-                    <a id="go_home" href="index.html">Home</a>
-                    <a id="go_publications" href="publications.html">Publications</a>
-                    <a id="go_students" href="students.html">Students</a>
-                    <a href="PMiraldoCV.pdf">CV</a>
+                <div class="flex flex-jc-r flex-ai-c hide_for_mobile">
+                    <div class="header_links hide_for_mobile">
+                            <a id="go_home" href="index.html">Home</a>
+                            <a id="go_publications" href="publications.html">Publications</a>
+                            <a id="show_projects" class="disable">Projects</a>
+                    </div>
+                    <a id="hamburguer_projects_button" class="header_menu hide_for_mobile header_menu_add_margin_right">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                    <div class="header_links hide_for_mobile">
+                        <a id="go_students" href="students.html">Students</a>
+                            <a href="PMiraldoCV.pdf">CV</a>
+                    </div>
                 </div>
-        </nav>
+            </nav>
+        </div>
         <div id="hamburguer_menu_link" class="header_menu_links header_menu_links_closed hide_for_desktop">
             <a id="go_home" href="index.html">Home</a>
             <a id="go_publications" href="publications.html">Publications</a>
             <a id="go_students" href="students.html">Students</a>
             <a href="PMiraldoCV.pdf">CV</a>
+        </div>
+        <div id="hamburguer_projects_link" class="header_projects_links header_projects_links_closed">
+            <a id="go_reg_int_lines" class="caption">Projects with Code</a>
+            <a id="go_reg_int_lines" href=".">3D Registration with Lines Intersections</a>
+            <a id="go_reg_int_lines" href=".">3D Registration Network</a>
+            <a id="go_reg_int_lines" href=".">Pose Estimation with Points and Lines</a>
         </div>
     </header>
 
