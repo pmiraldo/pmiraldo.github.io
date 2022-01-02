@@ -190,20 +190,14 @@ ol li {
 }
 
 .selected_projects {
-  max-width: 93.75rem;
   padding-top: 2.5rem;
   padding-bottom: 0;
   padding-right: 1.25rem;
   padding-left: 1.25rem;
+  padding-left: calc( max( 100% - (2.5rem + 93.75rem) , 2.5% ) / 2 );
+  padding-right: calc( max( 100% - (2.5rem + 93.75rem) , 2.5% ) / 2 );
   margin-left: auto;
   margin-right: auto;
-}
-
-@media only screen and (max-width: calc(1.25rem + 93.75rem)) {
-  .selected_projects {
-    padding-left: calc(1.25rem - ( ( 1.25rem + 93.75rem - 100% ) / 50 ) );
-    padding-right: calc(1.25rem - ( ( 1.25rem + 93.75rem - 100% ) / 50 ) );
-  }
 }
 
 .selected_projects a, .selected_projects a:visited, .selected_projects a:hover {
@@ -267,20 +261,14 @@ ol li {
 }
 
 .body_intro {
-  max-width: 93.75rem;
   padding-top: 4.688rem;
   padding-bottom: 1.25rem;
   padding-right: 1.25rem;
   padding-left: 1.25rem;
+  padding-left: calc( max( 100% - (2.5rem + 93.75rem) , 2.5%  ) / 2 );
+  padding-right: calc( max( 100% - (2.5rem + 93.75rem) , 2.5%  ) / 2 );
   margin-left: auto;
   margin-right: auto;
-}
-
-@media only screen and (max-width: calc(1.25rem + 93.75rem)) {
-  .body_intro {
-    padding-left: calc(1.25rem - ( ( 1.25rem + 93.75rem - 100% ) / 50 ) );
-    padding-right: calc(1.25rem - ( ( 1.25rem + 93.75rem - 100% ) / 50 ) );
-  }
 }
 
 @media (max-width: 39.9375rem) {
@@ -379,8 +367,6 @@ ol li {
   border-bottom: 0.125rem solid black;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  padding-right: 1.25rem;
-  padding-left: 1.25rem;
   margin-left: auto;
   margin-right: auto;
   background-color: #1c2536;
@@ -411,16 +397,10 @@ ol li {
 }
 
 .header nav {
-  max-width: 93.75rem;
+  padding-left: calc( max( 100% - (2.5rem + 93.75rem) , 2.5% ) / 2 );
+  padding-right: calc( max( 100% - (2.5rem + 93.75rem) , 2.5% ) / 2 );
   margin-left: auto;
   margin-right: auto;
-}
-
-@media only screen and (max-width: calc(1.25rem + 93.75rem)) {
-  .header nav {
-    padding-left: calc(1.25rem - ( ( 1.25rem + 93.75rem - 100% ) / 50 ) );
-    padding-right: calc(1.25rem - ( ( 1.25rem + 93.75rem - 100% ) / 50 ) );
-  }
 }
 
 .header_logo img {
@@ -525,8 +505,8 @@ ol li {
   display: block;
   width: 25rem;
   margin-top: 0.3125rem;
+  margin-right: calc(8.125rem +  max( 100% - (2.5rem + 93.75rem) , 2.5% ) / 2 );
   margin-left: auto;
-  margin-right: 0.625rem;
   border: 0.125rem solid black;
   border-radius: 0.3125rem;
   padding: 0.625rem;
