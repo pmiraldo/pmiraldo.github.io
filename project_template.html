@@ -1,0 +1,183 @@
+<html>
+
+<head>
+    <title>Pedro Miraldo | IST</title>
+    <link REL="SHORTCUT ICON" HREF="./figures/ico.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/app/scss/style.css" class="css">
+</head>
+
+<body id="body_id">
+
+    <header id="header_id" class="header flex flex-ai-c header_show_down_projects">
+        <div id="header_top_bar" class="header_top_bar header_top_bar_project_color">
+            <nav id="nav_id" class="flex flex-jc-sb flex-ai-c">
+                <a id="hamburguer_button" class="header_menu hide_for_desktop">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                <a href="index.html" class="header_logo">
+                    <img src="figures/logo.png" , alt="institutional-logo">
+                </a>
+                <div class="flex flex-jc-r flex-ai-c hide_for_mobile">
+                    <div class="header_links hide_for_mobile">
+                            <a id="go_home" href="index.html">Home</a>
+                            <a id="go_publications" href="publications.html">Publications</a>
+                            <a id="show_projects" class="disable">Projects</a>
+                    </div>
+                    <a id="hamburguer_projects_button" class="header_menu hide_for_mobile header_menu_add_margin_right">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                    <div class="header_links hide_for_mobile">
+                        <a id="go_students" href="students.html">Students</a>
+                            <a href="PMiraldoCV.pdf">CV</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="hamburguer_menu_link" class="header_menu_links header_menu_links_closed hide_for_desktop">
+            <a id="go_home" href="index.html">Home</a>
+            <a id="go_publications" href="publications.html">Publications</a>
+            <a id="go_students" href="students.html">Students</a>
+            <a href="PMiraldoCV.pdf">CV</a>
+        </div>
+        <div id="hamburguer_projects_link" class="header_projects_links header_projects_links_closed">
+            <a id="go_reg_int_lines" class="caption">Projects with Code</a>
+            <a id="go_reg_int_lines" href=".">3D Registration with Lines Intersections</a>
+            <a id="go_reg_int_lines" href=".">3D Registration Network</a>
+            <a id="go_reg_int_lines" href=".">Pose Estimation with Points and Lines</a>
+        </div>
+    </header>
+
+
+    
+    <div class="background_project_light">
+
+        <div class="project_head">
+
+            <h1>
+                <!--
+                    paper title
+                -->
+                3DRegNet: A Deep Neural Network<br>for 3D Point Registration
+            </h1>
+            <h2>
+                <!--
+                    conference/journal
+                -->
+                IEEE/CVF Conf. Computer Vision and Pattern Recognition (CVPR), 2020
+            </h2>
+
+            <h3>
+                <!--
+                    add authors with links to their pages
+                -->
+                <a class="underline" href="https://goncalo120.github.io/">G. Dias Pais</a>
+                <a href="https://www.cs.utah.edu/~srikumar/">Srikumar Ramalingam</a>
+                <a href="https://ee.iisc.ac.in/~venu/">Venu Madhav Govindu</a>
+                <a href="http://users.isr.ist.utl.pt/~jan/">Jacinto C Nascimento</a>
+                <a href="https://rama.umiacs.io/">Rama Chellappa</a>
+                <a href="https://pmiraldo.github.io/">Pedro Miraldo</a>
+            </h3>
+
+            <br>
+
+            <h4>
+                <!--
+                    Main contact Contact
+                -->
+                E-Mail:
+                <a href="mailto:goncalo.pais@tecnico.ulisboa.pt">goncalo.pais@tecnico.ulisboa.pt</a>
+            </h4>
+
+            <!--
+                Download items, still in project head
+            -->
+            <div class="downloads">            
+                <div class="download_item">
+                    <a href="https://arxiv.org/pdf/1904.01701.pdf">
+                        <img src="regnet_icon.png" alt="Avatar" class="image">
+                        <div class="middle">
+                            <div class="text">
+                            Paper
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="download_item">
+                    <a href="https://github.com/goncalo120/3DRegNet">
+                        <img src="regnet_code.png" alt="Avatar" class="image">
+                        <div class="middle">
+                            <div class="text">
+                            Code
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+
+    <div class="project_body">
+        <iframe width="800px" height="450px" src="https://www.youtube.com/embed/rEY6KwhmXro" title="CVPR2020 Presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    
+
+    <div class="selected_projects">
+
+        <p>
+            <b style="font-size:25;">Selected Projects and Publications:</b>
+        </p>
+
+        <br><br>
+        <div class="row_project">
+            <div class="row_project_picture">
+                <img src="project_gif/2021-active-lines-sfm.gif">
+            </div>
+            <div class="row_project_papers">
+                <b>Active Structure-from-Motion using Lines:</b><br>
+                <ul>
+                    <li>
+                        <i>On Incremental Structure-from-Motion using Lines</i>, from<br>
+                        A. Mateus, O. Tahri, A. P. Aguiar, P. U. Lima, and <b>P. Miraldo</b>,<br>
+                        Transactions on Robotics (T-RO), 2021.
+                        [<a href="https://arxiv.org/abs/2105.11196">arXiv</a>,
+                        <a href="https://doi.org/10.1109/TRO.2021.3085487">doi</a>]
+
+                    </li>
+                    <li>
+                        <i>Active Estimation of 3D Lines in Spherical Coordinates</i>, from<br>
+                        A. Mateus, O. Tahri, and <b>P. Miraldo</b>,<br>
+                        American Control Conference (ACC), 2019.
+                        [<a href="https://arxiv.org/abs/1902.00473">arXiv</a>,
+                        <a href="https://doi.org/10.23919/ACC.2019.8814938">doi</a>]
+
+                    </li>
+                    <li>
+                        <i>Active Structure-from-Motion for 3D Straight Lines</i>, from<br>
+                        A. Mateus, O. Tahri, and <b>P. Miraldo</b>,<br>
+                        IEEE/RSJ Int'l Conf. Intelligent Robots and Systems (IROS), 2018.
+                        [<a href="https://arxiv.org/abs/1807.00753">link</a>,
+                        <a href="./videos.html">video</a>,
+                        <a href="https://doi.org/10.1109/IROS.2018.8593793">doi</a>]
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="/app/js/script.js"></script>
+    <script src="/app/js/page_id.js"></script>
+
+</body>
+
+
+</html>
