@@ -16,6 +16,7 @@ hamburger_menu.addEventListener("click", function (){
         header.classList.remove("header_remove_radius");
         header.classList.remove("header_show_down_menu");
         body.classList.remove("stop_scroll");
+        header_top_bar.classList.remove("more_opacity");
     }
     else {
         hamburger_menu.classList.add("open");
@@ -23,6 +24,7 @@ hamburger_menu.addEventListener("click", function (){
         header.classList.add("header_remove_radius");
         header.classList.add("header_show_down_menu");
         body.classList.add("stop_scroll");
+        header_top_bar.classList.add("more_opacity");
     }
 });
 
