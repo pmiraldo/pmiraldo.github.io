@@ -330,7 +330,7 @@ ol li {
 .row_bio_bio_news p {
   margin-top: 1.25rem;
   margin-bottom: 0;
-  color: #1e6ddb;
+  color: #ed1c24;
 }
 
 .row_bio_bio_news ul {
@@ -458,13 +458,13 @@ ol li {
 }
 
 .header_links a:hover {
-  color: #1e6ddb;
+  color: #ed1c24;
 }
 
 .header_links a.selected {
   border-radius: 0.3125rem;
-  background-color: black;
-  color: #e6e6e6;
+  background-color: #ed1c24;
+  color: #1c2536;
 }
 
 .header_menu_links {
@@ -488,8 +488,8 @@ ol li {
 
 .header_menu_links a.selected {
   border-radius: 0.3125rem;
-  background-color: black;
-  color: #e6e6e6;
+  background-color: #ed1c24;
+  color: #1c2536;
   font-weight: bold;
 }
 
