@@ -260,6 +260,13 @@ ol li {
   background-color: #e0e6f0;
 }
 
+.update_date p {
+  font-style: italic;
+  text-align: center;
+  font-size: 0.875rem;
+  padding: 0px;
+}
+
 .body_intro {
   max-width: 93.75rem;
   padding-top: 4.688rem;
