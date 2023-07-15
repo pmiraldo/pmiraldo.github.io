@@ -1,11 +1,12 @@
 <html>
 
 <head>
-    <title>Pedro Miraldo | IST</title>
-    <link REL="SHORTCUT ICON" HREF="./figures/ico.ico">
+    <title>Pedro Miraldo</title>
+    <link REL="SHORTCUT ICON" HREF="figures/diam.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/app/scss/style.css" class="css">
 </head>
+
 
 <body id="body_id">
 
@@ -18,7 +19,7 @@
                     <span></span>
                 </a>
                 <a href="index.html" class="header_logo">
-                    <img src="figures/IST_C_RGB_NEG.png" , alt="institutional-logo">
+                    <img src="figures/logo_merl.png" , alt="institutional-logo">
                 </a>
                 <div class="flex flex-jc-r flex-ai-c hide_for_mobile">
                     <div class="header_links hide_for_mobile">
@@ -60,32 +61,38 @@
                 <div class="row_bio_picture_contact">
                     <img src="figures/myPic.png" class="my_picture" alt="Pedro Miraldo"><br><br>
                     <b style="font-size:30">Pedro Miraldo</b><br>
-                    Instituto Superior T&eacute;cnico<br>
-                    University of Lisbon, Portugal<br>
-                    pedro (dot) miraldo (at) tecnico (dot) ulisboa (dot) pt
-                    <div style="padding-top:0.625rem">
+                    Mitsubishi Electric Research Laboratories<br>
+                    201 Broadway, Cambridge, MA 02139<br>
+                    miraldo (at) merl (dot) com
+                    <div style="padding-top:0.65rem">
                         <a href="https://scholar.google.com/citations?user=e4ZW_fgAAAAJ&hl=en">
                             <img src="https://scholar.google.pt/favicon.ico" style="width:1em;margin-right:.5em;"
-                                alt="google scholar icon">google scholar
+                                alt="google scholar icon">Google Scholar
                         </a>
                     </div>
-                    <div itemscope itemtype="https://schema.org/Person">
+                    <div style="padding-top:0.325rem">
+                        <a href="https://www.merl.com/people/miraldo">
+                            <img src="figures/diam.png" style="width:1em;margin-right:.5em;"
+                                alt="google MERL icon">MERL Page
+                        </a>
+                    </div>
+                    <!-- <div itemscope itemtype="https://schema.org/Person">
                         <a itemprop="sameAs" content="https://orcid.org/0000-0002-8551-2448"
                             href="https://orcid.org/0000-0002-8551-2448" target="orcid.widget" rel="noopener noreferrer"
                             style="vertical-align:top;">
                             <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
                                 style="width:1em;margin-right:.5em;" alt="ORCID iD icon">orcid.org
                         </a>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="row_bio_bio">
                     <p style="margin-top: 0;">
-                        I am a second-stage Researcher (comparable to Assistant Research Professor) at the Institute for
-                        Systems & Robotics and the Department of Electrical & Computer Engineering, IST Instituto
+                        I am a Principal Research Scientist at MERL Mitsubishi Electric Research Laboratories.
+                        Before joining MERL, I was a second-stage Researcher (comparable to Assistant Research Professor) at
+                        the Institute for Systems & Robotics and the Department of Electrical & Computer Engineering, IST Instituto
                         Superior T&eacute;cnico, Lisboa. From 2018 to 2019, I was a postdoctoral associate at KTH Royal
-                        Institue of Technology. Previously, I held an FCT postdoctoral researcher grant (a highly
-                        competitive individual research grant) at IST. I am joining MERL Mitsubishi Electric Research
-                        Laboratories as a Principal Research Scientist in the fall.
+                        Institute of Technology. Previously, I held an FCT postdoctoral researcher grant (a highly
+                        competitive individual research grant) at IST.
                     </p>
                     <p>
                         I got my Master's and Ph.D. degrees in Electrical and Computer Engineering from the Faculty of
@@ -93,8 +100,7 @@
                         Araujo.
                     </p>
                     <p>
-                        My main research topics are 3D computer vision, robot vision, active vision. I am a member of
-                        The Institute of Electrical and Electronics Engineers (IEEE).
+                        My main research topics are 3D computer vision, robot vision, active vision.
                     </p>
                     <div class="row_bio_bio_news">
                         <p>
@@ -102,16 +108,25 @@
                         </p>
                         <ul>
                             <li>
-                                A paper accepted in the <i>IEEE International Conference on Robotics and Automation (ICRA)</i>;
+                                Two papers accepted at <i>IEEE/CVF International Conference on Computer Vision (ICCV), 2023</i>;
+                            </li>
+                            <li>
+                                A paper accepted at <i>International Conference on Information Fusion (FUSION), 2023</i>;
+                            </li>
+                            <li>
+                                A paper accepted at <i>International Journal of Computer Vision (IJCV), 2023</i>;
+                            </li>
+                            <li>
+                                A paper accepted at <i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2022</i>;
+                            </li>
+                            <li>
+                                Andre Mateus completed his Ph.D. with the highest grade (Pass with Distinction and Honour)!
+                            </li>
+                            <li>
+                                A paper accepted at <i>IEEE International Conference on Robotics and Automation (ICRA), 2022</i>;
                             </li>
                             <li>
                                 I am teaching <a href="https://fenix.tecnico.ulisboa.pt/disciplinas/IASD/2021-2022/1-semestre">Artificial Intelligence</a> in the fall, 2021;
-                            </li>
-                            <li>
-                                A paper accepted in the <i>Elsevier Journal of Computational and Applied Mathematics</i>;
-                            </li>
-                            <li>
-                                A paper accepted in the <i>IEEE Transactions on Robotics</i>.
                             </li>
                         </ul>
                     </div>
@@ -128,7 +143,74 @@
             <b style="font-size:25;">Selected Projects and Publications:</b>
         </p>
 
+        <div class="row_project">
+            <div class="row_project_picture">
+                <img src="project_gif/2020-line-intersections-reg.gif" class="row_project_picture_gif">
+            </div>
+            <div class="row_project_papers">
+                <b>Intersecting Lines for 3D Registration:</b><br>
+                <ul>
+                    <li>
+                        <i>Fast and Accurate 3D Registration from Line Intersection Constraints</i>, from<br>
+                        A. Mateus, S. Ranade, S. Ramalingam, and <b>P. Miraldo</b>,<br>
+                        International Journal Computer Vision (IJCV), 2023.
+                        [<a href="https://doi.org/10.1007/s11263-023-01774-1">doi</a>,
+                        <a href="https://github.com/3DVisionISR/3DMinRegLineIntersect">code</a>]
+                    </li>
+                    <li>
+                        <i>Minimal Solvers for 3D Scan Alignment with Pairs of Intersecting Lines</i>, from<br>
+                        A. Mateus, S. Ramalingam, and <b>P. Miraldo</b>,<br>
+                        IEEE/CVF Conf. Computer Vision and Pattern Recognition (CVPR), 2020.
+                        [<a
+                            href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Mateus_Minimal_Solvers_for_3D_Scan_Alignment_With_Pairs_of_Intersecting_CVPR_2020_paper.pdf">cfv</a>,
+                        <a href="https://doi.org/10.1109/CVPR42600.2020.00726">doi</a>,
+                        <a href="https://www.youtube.com/embed/W8lRMMcNids">video</a>,
+                        <a href="https://github.com/3DVisionISR/3DMinRegLineIntersect">code</a>]
+                    </li>
+                    <li>
+                        <i>Mapping of Sparse 3D Data using Alternating Projection</i>, from<br>
+                        S. Ranade, X. Yu, S. Kakkar, <b>P. Miraldo</b>, and S. Ramalingam,<br>
+                        Asian Conf. Computer Vision
+                        (ACCV), 2020.
+                        [<a href="https://arxiv.org/abs/2010.02516">arXiv</a>,
+                        <a href="https://doi.org/10.1007/978-3-030-69525-5_18">video</a>,
+                        <a href="https://doi.org/10.1007/978-3-030-69525-5_18">doi</a>]
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+         
+        <br>
+        <hr><br>
+
         <br><br>
+        <div class="row_project">
+            <div class="row_project_picture">
+                <img src="project_gif/2022_catadioptric_line_projection.gif">
+            </div>
+            <div class="row_project_papers">
+                <b>Line Projections in Catadioptric Cameras:</b><br>
+                <ul>
+                    <li>
+                        <i>A Unified Model for Line Projections in Catadioptric Cameras with Rotationally Symmetric Mirrors</i>, from<br>
+                        <b>P. Miraldo</b> and Jose Pedro Iglesias<br>
+                        IEEE/CVF Conf. Computer Vision and Pattern Recognition (CVPR), 2022.
+                        [doi]
+                    </li>
+                    <li>
+                        <i>Analytical Modeling of Vanishing Points and Curves in Catadioptric Cameras</i>, from<br>
+                        <b>Pedro Miraldo</b>, Francisco Eiras, and Srikumar Ramalingam<br>
+                        IEEE/CVF Conf. Computer Vision and Pattern Recognition (CVPR), 2020.
+                        [<a href="https://arxiv.org/abs/1804.09460">arXiv:1804.09460</a>,
+                        <!-- <a href="myproj/2018vp_ncccs.html">project</a>, -->
+                        <a href="https://doi.org/10.1109/CVPR.2018.00215">doi</a>];
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <br><hr><br>
         <div class="row_project">
             <div class="row_project_picture">
                 <img src="project_gif/2021-active-lines-sfm.gif">
@@ -140,7 +222,8 @@
                         <i>An observer cascade for velocity and multiple line estimation</i>, from<br>
                         A. Mateus, P. U. Lima, and <b>P. Miraldo</b>,<br>
                         IEEE Int'l Conf. Robotics and Automation (ICRA), 2022.
-                        [doi]
+                        [<a href="https://arxiv.org/abs/2203.01879">arXiv</a>,
+                        doi]
                     </li>
                     <li>
                         <i>On Incremental Structure-from-Motion using Lines</i>, from<br>
@@ -165,40 +248,6 @@
                         [<a href="https://arxiv.org/abs/1807.00753">link</a>,
                         <a href="./videos.html">video</a>,
                         <a href="https://doi.org/10.1109/IROS.2018.8593793">doi</a>]
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <br>
-        <hr><br>
-
-        <div class="row_project">
-            <div class="row_project_picture">
-                <img src="project_gif/2020-line-intersections-reg.gif" class="row_project_picture_gif">
-            </div>
-            <div class="row_project_papers">
-                <b>Intersecting Lines for 3D Registration:</b><br>
-                <ul>
-                    <li>
-                        <i>Minimal Solvers for 3D Scan Alignment with Pairs of Intersecting Lines</i>, from<br>
-                        A. Mateus, S. Ramalingam, and <b>P. Miraldo</b>,<br>
-                        IEEE/CVF Conf. Computer Vision and Pattern Recognition (CVPR), 2020.
-                        [<a
-                            href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Mateus_Minimal_Solvers_for_3D_Scan_Alignment_With_Pairs_of_Intersecting_CVPR_2020_paper.pdf">cfv</a>,
-                        <a href="https://doi.org/10.1109/CVPR42600.2020.00726">doi</a>,
-                        <a href="https://www.youtube.com/embed/W8lRMMcNids">video</a>,
-                        <a href="https://github.com/3DVisionISR/3DMinRegLineIntersect">code</a>]
-
-                    </li>
-                    <li>
-                        <i>Mapping of Sparse 3D Data using Alternating Projection</i>, from<br>
-                        S. Ranade, X. Yu, S. Kakkar, <b>P. Miraldo</b>, and S. Ramalingam,<br>
-                        Asian Conf. Computer Vision
-                        (ACCV), 2020.
-                        [<a href="https://arxiv.org/abs/2010.02516">arXiv</a>,
-                        <a href="https://doi.org/10.1007/978-3-030-69525-5_18">video</a>,
-                        <a href="https://doi.org/10.1007/978-3-030-69525-5_18">doi</a>]
                     </li>
                 </ul>
             </div>
@@ -325,6 +374,10 @@
             </div>
         </div>
 
+    </div>
+
+    <div class="update_date">
+        <p>Last updated: Apr 2, 2022</p>
     </div>
 
     <script src="/app/js/script.js"></script>
