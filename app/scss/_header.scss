@@ -28,6 +28,8 @@
     
         background-color: $theme_color_background;
         color: $theme_color_text_front;
+        font-weight: normal;
+
 
         font-size: $font_med;
         
@@ -79,16 +81,20 @@
     }
 
     &_menu{  // Mobily menu
-        
+
         > span {
             display: block;
             width: 1.875rem;
             height: 0.125rem;
-            background-color: black;
+            background-color: white;
             transition: all 300ms ease-in-out;
             &:not(:last-child){
                 margin-bottom: 0.25rem;
             }
+        }
+
+        .change_color_span{
+            background-color: black;
         }
 
         &_add_margin_right{
@@ -190,11 +196,15 @@
         margin-left: auto;
         border: 0.125rem solid black;
         border-radius: 0.3125rem;
-        padding: 0.625rem;
+        padding: 0rem;
         text-align: center;
         background-color: $theme_color_background;
         color: $theme_color_text_front;
         opacity: 0.95;
+
+        font-size: $font_small;
+
+        
 
         &_project_color{
             background-color: #f6dc76;
@@ -205,10 +215,10 @@
             width: 90%;
             transform: translate(5%,0);
             display: block;
-            padding-left: 0.625rem;
-            padding-right: 0.625rem;
-            padding-top: 0.625rem;
-            padding-bottom: 0.625rem;
+            padding-left: 0rem;
+            padding-right: 0rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
             color: inherit; 
 
             &:first-child{
@@ -229,15 +239,17 @@
 
         a.selected{
             border-radius: 0.3125rem;
-            background-color: $theme_color_link_selected_background;
-            color: $theme_color_link_selected_text;
-            // font-weight: bold;
+            background-color: rgb(39, 39, 39);
+            color: $color_background;
+            font-weight: bold;
         }
 
         a.caption{
             pointer-events: none;
             cursor: default;
             border-bottom: 0.125rem solid black;
+            font-weight: bold;
+            font-size: $font_med;
         }
 
         &_closed{
