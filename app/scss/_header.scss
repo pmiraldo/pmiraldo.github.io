@@ -55,7 +55,7 @@
         }
 
         &_project_color{
-            background-color: #f6dc76;
+            background-color: #f9e8a5;
             color: black;
         }
     }
@@ -207,7 +207,7 @@
         
 
         &_project_color{
-            background-color: #f6dc76;
+            background-color: #f8c600;
             color: black;
         }
 
@@ -226,10 +226,11 @@
                 padding-bottom: 0.9375rem;
             }
             &:nth-child(2){
-                padding-top: 0.9375rem;
+                margin-top: 0.3rem;
             }
             &:last-child{
-                padding-bottom: 0.9375rem;
+                margin-bottom: 0.3rem;
+
             }
         }
 

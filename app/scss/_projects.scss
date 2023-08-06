@@ -3,7 +3,7 @@
     padding-right: 0;
     padding-bottom: 0;
     padding-left: 0;
-    background-color: #f3f0dc;
+    background-color: #f8f7ed;
 }
 
 
@@ -152,18 +152,27 @@
     padding-left: #{"calc( max( 100% - (2.5rem + 75rem) , 2.5%  ) / 2 )"};
     padding-right: #{"calc( max( 100% - (2.5rem + 75rem) , 2.5%  ) / 2 )"};
 
+    // p{
+    //     margin: 30px:
+    //     text-align: center;
+    //     color: $color_text;
+    //     font-weight: normal;
+    //     // font-family:'times';    
+    // }
+
     h1{
-        color: red; 
+        color: rgb(0, 0, 0); 
         font-size: $font_large;
         font-weight: lighter;
     }
 
     .video{
+        margin: 50px;
         text-align: center;
     }
 
     .ptext{
-        vertical-align: top;
+        vertical-align: text-top;
         width: 55%;
 
         &_right{
@@ -174,22 +183,23 @@
         &_left{
             float: left;
             clear: left;
-
         }
 
         p{
-            margin: 0;
+            margin: 30px;
             text-align: left;
             color: $color_text;
             font-weight: normal;
-            // font-family:'verdana';    
+            font-family:'times';    
             // font-size: $font_large;           
         }
     }
 
     .pic{
-        vertical-align: top;
+        vertical-align: text-top;
         width: 35%;
+        margin: 30px;
+
 
         img{
             width: 100%;
@@ -208,7 +218,7 @@
     }
 }
 
-.pic_full_length{
+.full_length{
     display: block;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -223,12 +233,18 @@
         width: 90%;
         height: auto;
     }
+
+    h1{
+        color: rgb(0, 0, 0); 
+        font-size: $font_large;
+        font-weight: normal;
+    }
 }
 
 
 .bibtex_ref{
     display: block;
-    width: 60%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 30px;
@@ -246,7 +262,7 @@
     }
 
     pre{
-        margin: 0;
+        margin: 30px;
         text-align: left;
         color: $color_text;
         font-weight: normal;

@@ -98,7 +98,7 @@ fetch('/nav.html')
 })
 .then(
     window.onload = function(){
-        const id_regnet = document.querySelectorAll("#go_regnet");
+
         const id_header_top_bar = document.querySelector("#header_top_bar");
         const id_hamb_project_burron = document.querySelector("#hamburguer_projects_link")
         const hamburguer_span_projects_button_1 = document.querySelector("#span_hamburguer_projects_button_1");
@@ -106,16 +106,40 @@ fetch('/nav.html')
         const hamburguer_span_projects_button_3 = document.querySelector("#span_hamburguer_projects_button_3");
 
 
-        if (window.location.pathname == "/projects/regnet/regnet.html" || window.location.pathname == "/" ) {
-            id_regnet.forEach(function(element){
+        // project regnet
+        if (window.location.pathname == "/projects/regnet/regnet.html"){
+            const id = document.querySelectorAll("#go_regnet");
+            id.forEach(function(element){
                 element.classList.add("selected");
             });
+        }
+
+        // project bansac
+        if (window.location.pathname == "/projects/bansac/bansac.html"){
+            const id = document.querySelectorAll("#go_bansac");
+            id.forEach(function(element){
+                element.classList.add("selected");
+            });
+        }
+
+        // project line intersect
+        if (window.location.pathname == "/projects/ref_line_intersect/line_intersect.html"){
+            const id = document.querySelectorAll("#go_reg_int_lines");
+            id.forEach(function(element){
+                element.classList.add("selected");
+            });
+        }
+
+        if (project || window.location.pathname == "/" ) {
             id_header_top_bar.classList.add("header_top_bar_project_color");
             hamburguer_span_projects_button_1.classList.add("change_color_span");
             hamburguer_span_projects_button_2.classList.add("change_color_span");
             hamburguer_span_projects_button_3.classList.add("change_color_span");
             id_hamb_project_burron.classList.add("header_projects_links_project_color");
-            document.getElementById("institutional_logo").src="/figures/logo_ist_black.png";
+            if(ist)
+                document.getElementById("institutional_logo").src="/figures/logo_ist_black.png";
+            if(merl)
+                document.getElementById("institutional_logo").src="/figures/merl_black.png";
         }
     }
 )
