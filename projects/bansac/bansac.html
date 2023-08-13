@@ -1,0 +1,141 @@
+<html>
+
+<head>
+    <title>Pedro Miraldo | IST</title>
+    <link REL="SHORTCUT ICON" HREF="../../figures/diam.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../app/scss/style.css" class="css">
+</head>
+
+<body id="body_id">
+
+    <script>
+        var project=true;
+        var merl=true;
+        var ist=false;
+    </script>
+    <script id="replace_with_navbar" src="../../app/js/nav.js"></script>
+
+    
+    <div class="background_project_light">
+
+        <div class="project_head">
+
+            <h1>
+                <!--
+                    paper title
+                -->
+                BANSAC: A dynamic BAyesian <br> Network for SAmple Consensus
+            </h1>
+            <h2>
+                <!--
+                    conference/journal
+                -->
+                IEEE/CVF Int'l Conf. Computer Vision (ICCV), 2023
+            </h2>
+
+            <h3>
+                <!--
+                    add authors with links to their pages
+                -->
+                Valter Piedade  
+                <a href="https://pmiraldo.github.io/">Pedro Miraldo</a>
+            </h3>
+
+            <br>
+
+            <h4>
+                <!--
+                    Main contact Contact
+                -->
+                E-Mail:
+                <a href="mailto:miraldo@merl.com">miraldo@merl.com</a>
+            </h4>
+
+            <!--
+                Download items, still in project head
+            -->
+            <div class="downloads">            
+                <div class="download_item">
+                    <!-- <a href="https://arxiv.org/pdf/1904.01701.pdf"> -->
+                        <img src="regnet_icon.png" alt="Avatar" class="image">
+                        <div class="middle">
+                            <div class="text">
+                            <!-- Paper -->
+                            Soon
+                            </div>
+                        </div>
+                    <!-- </a> -->
+                </div>
+                <div class="download_item">
+                    <!-- <a href="https://github.com/goncalo120/3DRegNet"> -->
+                        <img src="regnet_code.png" alt="Avatar" class="image">
+                        <div class="middle">
+                            <div class="text">
+                            <!-- Code -->
+                            Soon
+                            </div>
+                        </div>
+                    <!-- </a> -->
+                </div>
+                <div class="download_item">
+                    <!-- <a href="https://www.youtube.com/embed/rEY6KwhmXro"> -->
+                        <img src="regnet_slides.png" alt="Avatar" class="image">
+                        <div class="middle">
+                            <div class="text">
+                            <!-- Video -->
+                            Soon
+                            </div>
+                        </div>
+                    <!-- </a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+
+    <div class="project_body">
+        <!--
+            <div class="video">
+                <iframe width="800px" height="450px" src="https://www.youtube.com/embed/rEY6KwhmXro" title="CVPR2020 Presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        -->
+
+
+        <div class="ptext ptext_left">
+            <p>
+            RANSAC-based algorithms are the standard techniques for robust estimation in computer vision. These algorithms are iterative and computationally expensive; they alternate between random sampling of data, computing hypotheses, and running inlier counting. Many authors tried different approaches to improve efficiency. One of the major improvements is having a guided sampling, letting the RANSAC cycle stop sooner. This paper presents a new guided sampling process for RANSAC. Previous methods either assume no prior information about the inlier/outlier classification of data points or use some previously computed scores in the sampling. In this paper, we derive a dynamic Bayesian network that updates individual data points' inlier scores while iterating RANSAC. At each iteration, we apply weighted sampling using the updated scores. Our method works with or without prior data point scorings. In addition, we use the updated inlier/outlier scoring for deriving a new stopping criterion for the RANSAC loop. We test our method using three different real-world datasets and different applications and obtain state-of-the-art results. Our method outperforms the baselines in accuracy while needing less computational time.
+            </p>
+        </div>
+        <div class="pic pic_right">
+            <img src="bansac_intro.jpg">
+        </div>
+
+    </div>
+
+
+
+    <div class="background_project_light">
+        <div class="bibtex_ref">
+            <h1>Bibtex:</h1>
+            <hr>
+            <pre>
+@InProceedings{Pais20,
+    Author    = {Valter Piedade and Pedro Miraldo},
+    Title     = {BANSAC: A dynamic BAyesian Network for SAmple Consensus},
+    Year      = {2023},
+    booktitle = IEEE/CVF Int'l Conf. Computer Vision (ICCV)
+}
+            </pre>
+        </div>
+    </div>
+
+    <!-- <script src="../../app/js/script.js"></script>
+    <script src="../../app/js/page_id.js"></script>
+    <script src="../../app/js/projects_id.js"></script>
+     -->
+
+</body>
+
+
+</html>
