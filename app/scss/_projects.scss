@@ -160,6 +160,8 @@
     padding-left: #{"calc( max( 100% - (2.5rem + 75rem) , 2.5%  ) / 2 )"};
     padding-right: #{"calc( max( 100% - (2.5rem + 75rem) , 2.5%  ) / 2 )"};
 
+    font-size: $font_large;
+
     // p{
     //     margin: 30px:
     //     text-align: center;
@@ -185,6 +187,7 @@
         @media (max-width: 39.9375rem) {
             width: 100%;
         }
+        font-size: inherit;
 
         &_right{
             float: right;
@@ -200,15 +203,20 @@
             margin: 30px;
             text-align: left;
             color: $color_text;
-            font-weight: normal;
-            font-family:'times';    
+            font-family:'times';  
+            font-size: inherit;  
             // font-size: $font_large;           
+        }
+
+        ul li{
+            font-family:'times';  
+            font-size: inherit;
         }
     }
 
     .pic{
         vertical-align: text-top;
-        width: 35%;
+        width: 45%;
         padding: 30px;
         @media (max-width: 39.9375rem) {
             width: 100%;

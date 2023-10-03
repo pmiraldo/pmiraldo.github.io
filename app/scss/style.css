@@ -446,6 +446,7 @@ ol li {
   margin-bottom: 30px;
   padding-left: calc( max( 100% - (2.5rem + 75rem) , 2.5%  ) / 2 );
   padding-right: calc( max( 100% - (2.5rem + 75rem) , 2.5%  ) / 2 );
+  font-size: 1.25rem;
 }
 .project_body h1 {
   color: rgb(0, 0, 0);
@@ -459,6 +460,7 @@ ol li {
 .project_body .ptext {
   vertical-align: text-top;
   width: 55%;
+  font-size: inherit;
 }
 @media (max-width: 39.9375rem) {
   .project_body .ptext {
@@ -477,12 +479,16 @@ ol li {
   margin: 30px;
   text-align: left;
   color: hsl(0, 0%, 0%);
-  font-weight: normal;
   font-family: "times";
+  font-size: inherit;
+}
+.project_body .ptext ul li {
+  font-family: "times";
+  font-size: inherit;
 }
 .project_body .pic {
   vertical-align: text-top;
-  width: 35%;
+  width: 45%;
   padding: 30px;
 }
 @media (max-width: 39.9375rem) {

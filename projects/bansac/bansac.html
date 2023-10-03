@@ -107,25 +107,42 @@
 
 
     <div class="project_body">
-        <!--
-            <div class="video">
-                <iframe width="800px" height="450px" src="https://www.youtube.com/embed/rEY6KwhmXro" title="CVPR2020 Presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        -->
-
-
         <div class="ptext ptext_left">
             <p>
-            RANSAC-based algorithms are the standard techniques for robust estimation in computer vision. These algorithms are iterative and computationally expensive; they alternate between random sampling of data, computing hypotheses, and running inlier counting. Many authors tried different approaches to improve efficiency. One of the major improvements is having a guided sampling, letting the RANSAC cycle stop sooner. This paper presents a new guided sampling process for RANSAC. Previous methods either assume no prior information about the inlier/outlier classification of data points or use some previously computed scores in the sampling. In this paper, we derive a dynamic Bayesian network that updates individual data points' inlier scores while iterating RANSAC. At each iteration, we apply weighted sampling using the updated scores. Our method works with or without prior data point scorings. In addition, we use the updated inlier/outlier scoring for deriving a new stopping criterion for the RANSAC loop. We test our method using three different real-world datasets and different applications and obtain state-of-the-art results. Our method outperforms the baselines in accuracy while needing less computational time.
+            RANSAC-based algorithms are the standard techniques for robust estimation in computer vision. These algorithms are iterative and computationally expensive; they alternate between random sampling of data, computing hypotheses, and running inlier counting. Many authors tried different approaches to improve efficiency. One of the major improvements is having a guided sampling, letting the RANSAC cycle stop sooner. This paper presents a new guided sampling process for RANSAC. Previous methods either assume no prior information about the inlier/outlier classification of data points or use some previously computed scores in the sampling. In this paper, we derive a dynamic Bayesian network that updates individual data points' inlier scores while iterating RANSAC. At each iteration, we apply weighted sampling using the updated scores. Our method works with or without prior data point scorings. In addition, we use the updated inlier/outlier scoring for deriving a new stopping criterion for the RANSAC loop.
             </p>
         </div>
         <div class="pic pic_right">
             <img src="bansac_intro.jpg">
         </div>
-
     </div>
 
+    <hr>
 
+    <div class="project_body">
+
+        <div class="ptext ptext_right">
+            <p>
+            These are the paper's main contributions:
+            </p>
+            <ul>
+                <li> A novel adaptive sampling strategy that uses a dynamic Bayesian network to update data points' inlier scores. Our method does not need any prior information about the quality of the data, although it can use it;</li>
+                <li> A new simple and intuitive stopping criterion using the updated scores; and</li>
+                <li> Several experiments with multiple datasets show that our approach outperforms the best baselines in accuracy, being also more efficient. We implemented BANSAC using C++, within the OpenCV USAC framework. </li>
+            </p>
+        </div>
+        <div class="pic pic_left">
+            <img src="essential_example.jpg">
+        </div>
+    
+    </div>
+
+    <hr>
+
+
+    <div class="full_length">
+        <img src="results.jpg">
+    </div>
 
     <div class="background_project_light">
         <div class="bibtex_ref">
