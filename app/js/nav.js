@@ -99,11 +99,16 @@ fetch('/nav.html')
 .then(
     window.onload = function(){
 
-        const id_header_top_bar = document.querySelector("#header_top_bar");
         const id_hamb_project_burron = document.querySelector("#hamburguer_projects_link")
         const hamburguer_span_projects_button_1 = document.querySelector("#span_hamburguer_projects_button_1");
         const hamburguer_span_projects_button_2 = document.querySelector("#span_hamburguer_projects_button_2");
         const hamburguer_span_projects_button_3 = document.querySelector("#span_hamburguer_projects_button_3");
+        const hamburguer_span_button_1 = document.querySelector("#span_hamburguer_button_1");
+        const hamburguer_span_button_2 = document.querySelector("#span_hamburguer_button_2");
+        const hamburguer_span_button_3 = document.querySelector("#span_hamburguer_button_3");
+        const id_header_top_bar = document.querySelector("#id_header_top_bar");
+        const menu_down = document.querySelector("#hamburguer_menu_link");
+        const hamburger_menu = document.querySelector("#hamburguer_button");
 
 
         // project regnet
@@ -130,16 +135,19 @@ fetch('/nav.html')
             });
         }
 
-        if (project || window.location.pathname == "/" ) {
+        if (project) {
             id_header_top_bar.classList.add("header_top_bar_project_color");
+            menu_down.classList.add("header_projects_links_project_color");
+            // hamburger_menu.classList.add("header_projects_links_project_color");
             hamburguer_span_projects_button_1.classList.add("change_color_span");
             hamburguer_span_projects_button_2.classList.add("change_color_span");
             hamburguer_span_projects_button_3.classList.add("change_color_span");
+            hamburguer_span_button_1.classList.add("change_color_span");
+            hamburguer_span_button_2.classList.add("change_color_span");
+            hamburguer_span_button_3.classList.add("change_color_span");
             id_hamb_project_burron.classList.add("header_projects_links_project_color");
-            if(ist)
-                document.getElementById("institutional_logo").src="/figures/logo_ist_black.png";
-            if(merl)
-                document.getElementById("institutional_logo").src="/figures/merl_black.png";
+            if(ist) document.getElementById("institutional_logo").src="/figures/logo_ist_black.png";
+            if(merl) document.getElementById("institutional_logo").src="/figures/merl_black.png";    
         }
     }
 )

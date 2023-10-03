@@ -29,6 +29,9 @@
         font-weight: normal;
         font-family:'verdana';
         font-size: $font_llarge;
+        @media (max-width: 39.9375rem) {
+            font-size: $font_large;
+        }
     }
 
     // published conf./journal!
@@ -40,6 +43,9 @@
         text-decoration: underline;
         font-family:'verdana';
         font-size: $font_large;
+        @media (max-width: 39.9375rem) {
+            font-size: $font_med;
+        }
     }
 
     // authors
@@ -51,6 +57,9 @@
         margin-bottom: 5px;
         display: inline-block; 
         font-size: $font_large;
+        @media (max-width: 39.9375rem) {
+            font-size: $font_med;
+        }
 
         a, a:visited{
             color: black;
@@ -60,7 +69,6 @@
             padding-top: 0.525rem;
             padding-bottom: 0.525rem;
             transition: color 200ms ease-in-out;
-
             &.underline{
                 text-decoration: underline;
             }
@@ -174,6 +182,9 @@
     .ptext{
         vertical-align: text-top;
         width: 55%;
+        @media (max-width: 39.9375rem) {
+            width: 100%;
+        }
 
         &_right{
             float: right;
@@ -198,8 +209,10 @@
     .pic{
         vertical-align: text-top;
         width: 35%;
-        margin: 30px;
-
+        padding: 30px;
+        @media (max-width: 39.9375rem) {
+            width: 100%;
+        }
 
         img{
             width: 100%;
@@ -268,5 +281,7 @@
         font-weight: normal;
         font-size: $font_small;    
     }
-
+    @media (max-width: 39.9375rem) {
+        display: none;
+    }
 }

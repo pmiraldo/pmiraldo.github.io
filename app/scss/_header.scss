@@ -161,8 +161,9 @@
         background-color: $theme_color_background;
         color: $theme_color_text_front;
         opacity: 0.95;
-
         text-align: center;
+        font-weight: bold;
+        font-size: $font_med;
 
         a{
             width: 100%;
@@ -172,14 +173,13 @@
             padding-top: 0.9375rem;
             padding-bottom: 0.9375rem;
             display: block;
-            color: $theme_color_text_front;
+            color: inherit;
         }
 
         a.selected{
             border-radius: 0.3125rem;
             background-color: $theme_color_link_selected_background;
             color: inherit;
-            font-weight: bold;
         }
 
         &_closed{
@@ -207,7 +207,7 @@
         
 
         &_project_color{
-            background-color: #f8c600;
+            background-color: #f9e8a5;
             color: black;
         }
 

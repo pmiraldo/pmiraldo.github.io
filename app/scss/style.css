@@ -14,7 +14,7 @@ body {
   line-height: 1.1;
   font-family: Helvetica;
   color: hsl(0, 0%, 0%);
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 .stop_scroll {
@@ -329,7 +329,12 @@ ol li {
   margin-right: auto;
   font-weight: normal;
   font-family: "verdana";
-  font-size: 2.813rem;
+  font-size: 2.25rem;
+}
+@media (max-width: 39.9375rem) {
+  .project_head h1 {
+    font-size: 1.25rem;
+  }
 }
 .project_head h2 {
   max-width: 50rem;
@@ -340,6 +345,11 @@ ol li {
   font-family: "verdana";
   font-size: 1.25rem;
 }
+@media (max-width: 39.9375rem) {
+  .project_head h2 {
+    font-size: 1rem;
+  }
+}
 .project_head h3 {
   max-width: 50rem;
   margin-left: auto;
@@ -348,6 +358,11 @@ ol li {
   margin-bottom: 5px;
   display: inline-block;
   font-size: 1.25rem;
+}
+@media (max-width: 39.9375rem) {
+  .project_head h3 {
+    font-size: 1rem;
+  }
 }
 .project_head h3 a, .project_head h3 a:visited {
   color: black;
@@ -445,6 +460,11 @@ ol li {
   vertical-align: text-top;
   width: 55%;
 }
+@media (max-width: 39.9375rem) {
+  .project_body .ptext {
+    width: 100%;
+  }
+}
 .project_body .ptext_right {
   float: right;
   clear: right;
@@ -463,7 +483,12 @@ ol li {
 .project_body .pic {
   vertical-align: text-top;
   width: 35%;
-  margin: 30px;
+  padding: 30px;
+}
+@media (max-width: 39.9375rem) {
+  .project_body .pic {
+    width: 100%;
+  }
 }
 .project_body .pic img {
   width: 100%;
@@ -522,6 +547,11 @@ ol li {
   font-weight: normal;
   font-size: 0.938rem;
 }
+@media (max-width: 39.9375rem) {
+  .bibtex_ref {
+    display: none;
+  }
+}
 
 .header {
   overflow: hidden;
@@ -548,7 +578,7 @@ ol li {
   background-color: hsl(219.2, 31.7%, 16.1%);
   color: #e9e9e9;
   font-weight: normal;
-  font-size: 1.125rem;
+  font-size: 1rem;
   transition: opacity 300ms ease-in-out;
   opacity: 0.9;
 }
@@ -644,6 +674,8 @@ ol li {
   color: #e9e9e9;
   opacity: 0.95;
   text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
 }
 .header_menu_links a {
   width: 100%;
@@ -651,13 +683,12 @@ ol li {
   padding-top: 0.9375rem;
   padding-bottom: 0.9375rem;
   display: block;
-  color: #e9e9e9;
+  color: inherit;
 }
 .header_menu_links a.selected {
   border-radius: 0.3125rem;
   background-color: #ed1c24;
   color: inherit;
-  font-weight: bold;
 }
 .header_menu_links_closed {
   display: none;
@@ -678,7 +709,7 @@ ol li {
   font-size: 0.938rem;
 }
 .header_projects_links_project_color {
-  background-color: #f8c600;
+  background-color: #f9e8a5;
   color: black;
 }
 .header_projects_links a {
@@ -715,7 +746,7 @@ ol li {
   cursor: default;
   border-bottom: 0.125rem solid black;
   font-weight: bold;
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 .header_projects_links_closed {
   display: none;
