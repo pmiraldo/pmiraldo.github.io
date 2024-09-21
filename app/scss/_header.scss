@@ -55,8 +55,10 @@
         }
 
         &_project_color{
-            background-color: #f9e8a5;
-            color: black;
+            // background-color: #f9e8a5;
+            // color: black;
+            background-color: $theme_project_color_background;
+            color: $theme_color_text_front;
         }
     }
 
@@ -94,7 +96,7 @@
         }
 
         .change_color_span{
-            background-color: black;
+            background-color: $theme_project_color_text_front;
         }
 
         &_add_margin_right{
@@ -207,8 +209,10 @@
         
 
         &_project_color{
-            background-color: #f9e8a5;
-            color: black;
+            // background-color: #f9e8a5;
+            // color: black;
+            background-color: $theme_color_background;
+            color: $theme_color_text_front;
         }
 
         a{
@@ -240,15 +244,15 @@
 
         a.selected{
             border-radius: 0.3125rem;
-            background-color: rgb(39, 39, 39);
-            color: $color_background;
+            background-color: $theme_color_text_front;
+            color: $theme_color_background;
             font-weight: bold;
         }
 
         a.caption{
             pointer-events: none;
             cursor: default;
-            border-bottom: 0.125rem solid black;
+            border-bottom: 0.125rem solid $theme_color_text_front;
             font-weight: bold;
             font-size: $font_med;
         }

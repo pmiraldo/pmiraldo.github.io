@@ -8,7 +8,6 @@ fetch('/nav.html')
 })
 .then(
     window.onload = function(){
-
         const id_page_home = document.querySelectorAll("#go_home");
         const id_page_pub = document.querySelectorAll("#go_publications");
         const id_page_students = document.querySelectorAll("#go_students");
@@ -62,7 +61,6 @@ fetch('/nav.html')
     const hamburguer_projects_link = document.querySelector("#hamburguer_projects_link");
 
     hamburger_menu.addEventListener("click", function (){
-
         if (hamburger_menu.classList.contains("open")) {
             hamburger_menu.classList.remove("open");
             menu_down.classList.add("header_menu_links_closed");
@@ -98,7 +96,6 @@ fetch('/nav.html')
 })
 .then(
     window.onload = function(){
-
         const id_hamb_project_burron = document.querySelector("#hamburguer_projects_link")
         const hamburguer_span_projects_button_1 = document.querySelector("#span_hamburguer_projects_button_1");
         const hamburguer_span_projects_button_2 = document.querySelector("#span_hamburguer_projects_button_2");
@@ -109,7 +106,6 @@ fetch('/nav.html')
         const id_header_top_bar = document.querySelector("#id_header_top_bar");
         const menu_down = document.querySelector("#hamburguer_menu_link");
         const hamburger_menu = document.querySelector("#hamburguer_button");
-
 
         // project regnet
         if (window.location.pathname == "/projects/regnet/regnet.html"){
@@ -146,8 +142,8 @@ fetch('/nav.html')
             hamburguer_span_button_2.classList.add("change_color_span");
             hamburguer_span_button_3.classList.add("change_color_span");
             id_hamb_project_burron.classList.add("header_projects_links_project_color");
-            if(ist) document.getElementById("institutional_logo").src="/figures/logo_ist_black.png";
-            if(merl) document.getElementById("institutional_logo").src="/figures/merl_black.png";    
+            if(ist) document.getElementById("institutional_logo").src="/figures/IST_C_RGB_NEG.png";
+            if(merl) document.getElementById("institutional_logo").src="/figures/logo_merl.png";    
         }
     }
 )
