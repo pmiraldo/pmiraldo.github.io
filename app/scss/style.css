@@ -52,13 +52,13 @@ ol li {
   margin: 0.9375rem 0 0 0;
 }
 
-@media (max-width: 39.9375rem) {
+@media (max-width: 46.9375rem) {
   .hide_for_mobile {
     display: none;
   }
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 47rem) {
   .hide_for_desktop {
     display: none;
   }
@@ -79,7 +79,7 @@ ol li {
     padding-right: calc(1.25rem - ( ( 1.25rem + 93.75rem - 100% ) / 50 ) );
   }
 }
-@media (max-width: 39.9375rem) {
+@media (max-width: 46.9375rem) {
   .students {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -93,7 +93,7 @@ ol li {
   display: inline-block;
   z-index: 2;
 }
-@media (max-width: 39.9375rem) {
+@media (max-width: 46.9375rem) {
   .student {
     width: 9.375rem;
     padding: 0.313;
@@ -148,7 +148,7 @@ ol li {
   margin-left: auto;
   margin-right: auto;
 }
-@media (max-width: 39.9375rem) {
+@media (max-width: 46.9375rem) {
   .pub {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -171,7 +171,7 @@ ol li {
 .selected_projects a, .selected_projects a:visited, .selected_projects a:hover {
   text-decoration: underline;
 }
-@media (max-width: 39.9375rem) {
+@media (max-width: 46.9375rem) {
   .selected_projects {
     width: 100%;
     padding-left: 1.25rem;
@@ -190,7 +190,7 @@ ol li {
   width: 20%;
   text-align: center;
 }
-@media (max-width: 39.9375rem) {
+@media (max-width: 46.9375rem) {
   .row_project_picture {
     width: 100%;
     text-align: center;
@@ -207,7 +207,7 @@ ol li {
   width: 80%;
   text-align: left;
 }
-@media (max-width: 39.9375rem) {
+@media (max-width: 46.9375rem) {
   .row_project_papers {
     width: 100%;
     padding-left: 0;
@@ -239,7 +239,7 @@ ol li {
   margin-left: auto;
   margin-right: auto;
 }
-@media (max-width: 39.9375rem) {
+@media (max-width: 46.9375rem) {
   .body_intro {
     padding-top: 4.688rem;
     padding-left: 1.25rem;
@@ -250,7 +250,7 @@ ol li {
 .my_picture {
   width: min(80%, 11.875rem);
 }
-@media (max-width: 39.9375rem) {
+@media (max-width: 46.9375rem) {
   .my_picture {
     width: min(calc(100% * 0.6),11.875rem);
   }
@@ -266,7 +266,7 @@ ol li {
   width: 30%;
   padding-right: 1.25rem;
 }
-@media (max-width: 39.9375rem) {
+@media (max-width: 46.9375rem) {
   .row_bio_picture_contact {
     width: 100%;
     padding-bottom: 1.875rem;
@@ -277,7 +277,7 @@ ol li {
   float: left;
   width: 65%;
 }
-@media (max-width: 39.9375rem) {
+@media (max-width: 46.9375rem) {
   .row_bio_bio {
     width: 100%;
     padding-bottom: 1.875rem;
@@ -297,7 +297,7 @@ ol li {
   width: 65%;
   padding-left: 10.3125rem;
 }
-@media (max-width: 39.9375rem) {
+@media (max-width: 46.9375rem) {
   .row_bio_papers {
     width: 100%;
   }
@@ -588,7 +588,7 @@ ol li {
   transition: opacity 300ms ease-in-out;
   opacity: 0.9;
 }
-@media (max-width: 39.9375rem) {
+@media (max-width: 46.9375rem) {
   .header_top_bar {
     width: calc(100% - 0.625rem);
     margin: 0.3125rem;
@@ -618,7 +618,7 @@ ol li {
 .header_logo img {
   height: 2.5rem;
 }
-@media (max-width: 39.9375rem) {
+@media (max-width: 46.9375rem) {
   .header_logo img {
     height: 2.063rem;
   }
