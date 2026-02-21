@@ -70,14 +70,16 @@ ol li {
   padding-bottom: 0;
   padding-right: 1.25rem;
   padding-left: 1.25rem;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media only screen and (max-width: 95rem) {
   .students {
     padding-left: calc(1.25rem - ( ( 1.25rem + 93.75rem - 100% ) / 50 ) );
     padding-right: calc(1.25rem - ( ( 1.25rem + 93.75rem - 100% ) / 50 ) );
   }
+}
+.students {
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (max-width: 46.9375rem) {
   .students {
@@ -295,12 +297,14 @@ ol li {
 .row_bio_papers {
   float: left;
   width: 65%;
-  padding-left: 10.3125rem;
 }
 @media (max-width: 46.9375rem) {
   .row_bio_papers {
     width: 100%;
   }
+}
+.row_bio_papers {
+  padding-left: 10.3125rem;
 }
 
 .background_project_light {
@@ -460,12 +464,14 @@ ol li {
 .project_body .ptext {
   vertical-align: text-top;
   width: 55%;
-  font-size: inherit;
 }
 @media (max-width: 39.9375rem) {
   .project_body .ptext {
     width: 100%;
   }
+}
+.project_body .ptext {
+  font-size: inherit;
 }
 .project_body .ptext_right {
   float: right;
