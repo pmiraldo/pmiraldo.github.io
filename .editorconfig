@@ -1,0 +1,13 @@
+# SPDX-FileCopyrightText: 2026 Pedro Miraldo
+#
+# SPDX-License-Identifier: MIT
+
+root = true
+
+[*.html]
+indent_style = space
+indent_size = 2
+
+[app/js/*.js]
+indent_style = space
+indent_size = 2

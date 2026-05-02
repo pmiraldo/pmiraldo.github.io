@@ -1,3 +1,10 @@
+// SPDX-FileCopyrightText: 2026 Pedro Miraldo
+//
+// SPDX-License-Identifier: MIT
+
+@use "variables" as *;
+@use "mobile_desktop" as *;
+
 .students {
   max-width: 93.75rem;
   padding-top: 3.125rem;

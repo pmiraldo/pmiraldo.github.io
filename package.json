@@ -1,0 +1,35 @@
+{
+  "name": "pmiraldo.github.io",
+  "version": "1.0.0",
+  "description": "Personal academic website for Pedro Miraldo, served via GitHub Pages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:build": "sass app/scss/style.scss app/scss/style.css",
+    "sass:watch": "sass --watch app/scss/style.scss:app/scss/style.css",
+    "lint:html": "htmlhint --config .htmlhintrc",
+    "precommit": "pre-commit run --all-files",
+    "format:html": "prettier --write --tab-width 2 --use-tabs false \"**/*.html\"",
+    "format:js": "prettier --write --tab-width 2 --use-tabs false \"app/js/**/*.js\"",
+    "lint:js": "eslint app/js/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmiraldo/pmiraldo.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pmiraldo/pmiraldo.github.io/issues"
+  },
+  "homepage": "https://github.com/pmiraldo/pmiraldo.github.io#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.3.0",
+    "globals": "^17.6.0",
+    "htmlhint": "^1.9.2",
+    "prettier": "^3.8.3",
+    "sass": "^1.99.0"
+  }
+}

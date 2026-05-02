@@ -1,0 +1,91 @@
+version = 1
+
+
+[[annotations]]
+path = [
+  ".htmlhintrc",
+  "package.json",
+  "package-lock.json",
+  "PMiraldoCV.pdf",
+]
+SPDX-FileCopyrightText = "2026 Pedro Miraldo"
+SPDX-License-Identifier = "MIT"
+
+
+
+[[annotations]]
+path = [
+  "app/scss/style.css.map",
+]
+SPDX-FileCopyrightText = "2026 Pedro Miraldo"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = [
+  "figures/**/*.png",
+  "figures/**/*.jpg",
+  "figures/**/*.jpeg",
+  "figures/**/*.ico",
+]
+SPDX-FileCopyrightText = "2026 Pedro Miraldo"
+SPDX-License-Identifier = "MIT"
+
+
+
+[[annotations]]
+path = [
+  "msc_thesis/**/*.pdf",
+]
+SPDX-FileCopyrightText = "2026 Pedro Miraldo"
+SPDX-License-Identifier = "MIT"
+
+
+
+[[annotations]]
+path = [
+  "people/**/*.jpg",
+  "people/**/*.jpeg",
+]
+SPDX-FileCopyrightText = "2026 Pedro Miraldo"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = [
+  "project_gif/.DS_Store",
+  "project_gif/**/*.gif",
+  "project_gif/**/*.xcf"
+]
+SPDX-FileCopyrightText = "2026 Pedro Miraldo"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = [
+  "projects/**/*.jpg",
+  "projects/**/*.png",
+]
+SPDX-FileCopyrightText = "2026 Pedro Miraldo"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = [
+  "projects/**/*.png",
+  "projects/**/*.jpg",
+]
+SPDX-FileCopyrightText = "2026 Pedro Miraldo"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = [
+  "pub/**/*.pdf",
+  "pub/**/*.zip",
+]
+SPDX-FileCopyrightText = "2026 Pedro Miraldo"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = [
+  "qr_codes/**/*.jpg",
+  "videos/**/*.mp4",
+]
+SPDX-FileCopyrightText = "2026 Pedro Miraldo"
+SPDX-License-Identifier = "MIT"

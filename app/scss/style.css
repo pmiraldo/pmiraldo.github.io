@@ -1,3 +1,7 @@
+/* SPDX-FileCopyrightText: 2026 Pedro Miraldo
+ *
+ * SPDX-License-Identifier: MIT
+ */
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -646,12 +650,14 @@ ol li {
   margin-right: 0.625rem;
 }
 .header_menu.open > span:first-child {
+  -webkit-transform: rotate(-45deg) translate(-0.25rem, 0.25rem);
   transform: rotate(-45deg) translate(-0.25rem, 0.25rem);
 }
 .header_menu.open > span:nth-child(2) {
   opacity: 0;
 }
 .header_menu.open > span:last-child {
+  -webkit-transform: rotate(45deg) translate(-0.25rem, -0.25rem);
   transform: rotate(45deg) translate(-0.25rem, -0.25rem);
 }
 .header_links a, .header_links a:visited {
@@ -762,4 +768,6 @@ ol li {
 }
 .header_projects_links_closed {
   display: none;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

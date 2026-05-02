@@ -1,3 +1,8 @@
+/* SPDX-FileCopyrightText: 2026 Pedro Miraldo
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
 fetch("/nav.html")
   .then((res) => res.text())
   .then((text) => {
@@ -28,7 +33,9 @@ function setSelected(elements, selected) {
 
 function highlightPageLinks() {
   const homeLinks = document.querySelectorAll('[data-nav="home"]');
-  const publicationsLinks = document.querySelectorAll('[data-nav="publications"]');
+  const publicationsLinks = document.querySelectorAll(
+    '[data-nav="publications"]',
+  );
   const studentsLinks = document.querySelectorAll('[data-nav="students"]');
 
   const path = window.location.pathname;
@@ -59,8 +66,12 @@ function setupMenuToggles() {
   const body = document.querySelector("#body_id");
   const header = document.querySelector("#header_id");
   const headerTopBar = document.querySelector("#id_header_top_bar");
-  const hamburgerMenuProjects = document.querySelector("#hamburguer_projects_button");
-  const hamburguerProjectsLink = document.querySelector("#hamburguer_projects_link");
+  const hamburgerMenuProjects = document.querySelector(
+    "#hamburguer_projects_button",
+  );
+  const hamburguerProjectsLink = document.querySelector(
+    "#hamburguer_projects_link",
+  );
 
   if (
     !hamburgerMenu ||
@@ -111,9 +122,15 @@ function setupProjectStyling() {
   }
 
   const projectsMenu = document.querySelector("#hamburguer_projects_link");
-  const projectsSpanButton1 = document.querySelector("#span_hamburguer_projects_button_1");
-  const projectsSpanButton2 = document.querySelector("#span_hamburguer_projects_button_2");
-  const projectsSpanButton3 = document.querySelector("#span_hamburguer_projects_button_3");
+  const projectsSpanButton1 = document.querySelector(
+    "#span_hamburguer_projects_button_1",
+  );
+  const projectsSpanButton2 = document.querySelector(
+    "#span_hamburguer_projects_button_2",
+  );
+  const projectsSpanButton3 = document.querySelector(
+    "#span_hamburguer_projects_button_3",
+  );
   const spanButton1 = document.querySelector("#span_hamburguer_button_1");
   const spanButton2 = document.querySelector("#span_hamburguer_button_2");
   const spanButton3 = document.querySelector("#span_hamburguer_button_3");

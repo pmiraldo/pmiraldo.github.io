@@ -1,10 +1,12 @@
-@import "variables";
-@import "mobile_desktop";
-@import "globals";
-@import "students";
-@import "publications";
-@import "selected_projects";
-@import "short_bio";
-@import "projects";
-@import "header"
+/* SPDX-FileCopyrightText: 2026 Pedro Miraldo
+ *
+ * SPDX-License-Identifier: MIT
+ */
 
+@use "globals";
+@use "students";
+@use "publications";
+@use "selected_projects";
+@use "short_bio";
+@use "projects";
+@use "header";

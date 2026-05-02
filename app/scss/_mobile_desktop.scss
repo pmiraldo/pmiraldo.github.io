@@ -1,3 +1,10 @@
+// SPDX-FileCopyrightText: 2026 Pedro Miraldo
+//
+// SPDX-License-Identifier: MIT
+
+@use "variables" as *;
+@use "sass:map";
+
 // breakpoint
 @media (min-width: $min_width_desktop){
     
@@ -11,14 +18,13 @@ $breakpoint_up: ("medium": "47rem", "large": "64rem", "xlarge": "87.5rem");
 $breakpoint_down: ("small": "46.9375rem", "medium": "63.9375rem", "large": "87.4375rem");
 
 @mixin breakpoint_up($size) {
-    @media (min-width: map-get($breakpoint_up, $size)){
+    @media (min-width: map.get($breakpoint_up, $size)){
         @content;
     }
 }
 
 @mixin breakpoint_down($size) {
-    @media (max-width: map-get($breakpoint_down, $size)){
+    @media (max-width: map.get($breakpoint_down, $size)){
         @content;
     }
 }
-
