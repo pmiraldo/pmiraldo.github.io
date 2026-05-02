@@ -49,9 +49,7 @@
             <a href="https://mateus03.github.io/">Andre Mateus,</a>
             <a href="https://www.siddhantranade.com/">Siddhant Ranade,</a>
             <br />
-            <a href="https://www.cs.utah.edu/~srikumar/"
-              >Srikumar Ramalingam,</a
-            >
+            <a href="https://www.cs.utah.edu/~srikumar/">Srikumar Ramalingam,</a>
             and
             <a href="https://pmiraldo.github.io/">Pedro Miraldo</a>
           </h3>
@@ -82,9 +80,7 @@
               </a>
             </div>
             <div class="download_item">
-              <a
-                href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Mateus_Minimal_Solvers_for_3D_Scan_Alignment_With_Pairs_of_Intersecting_CVPR_2020_paper.pdf"
-              >
+              <a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Mateus_Minimal_Solvers_for_3D_Scan_Alignment_With_Pairs_of_Intersecting_CVPR_2020_paper.pdf">
                 <img src="line_intersect_cvpr.png" alt="Avatar" class="image" />
                 <div class="middle">
                   <div class="text">CVPR</div>
@@ -139,14 +135,7 @@
             src="https://www.youtube.com/embed/W8lRMMcNids"
             title="CVPR2020 Presentation"
             frameborder="0"
-            allow="
-              accelerometer;
-              autoplay;
-              clipboard-write;
-              encrypted-media;
-              gyroscope;
-              picture-in-picture;
-            "
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
         </div>
@@ -157,34 +146,19 @@
       <div class="project_body">
         <div class="ptext ptext_left">
           <p>
-            3D Registration is a fundamental part of several robotics and
-            automation tasks. While classical methods predominantly exploit
-            constraints from points or plane correspondences, we have a
-            different take using line intersections. In other words, we focus on
-            exploiting geometric constraints arising from the intersection of
-            two (different) 3D line segments in two scans. In particular, we
-            derive nine minimal solvers from various geometric constraints
-            arising from line intersections along with other constraints: plane
-            correspondences, point correspondences, and line matches. We follow
-            a two-step method for 3D registration: a coarse estimation with
-            outlier rejection followed by refinement. In the first step, we use
-            a hybrid RANSAC loop that utilizes all the minimal solvers. This
-            RANSAC outputs a rough estimate for the 3D registration and the
-            outlier/inlier classification for the 3D features. As for the
-            refinement, we offer a non-linear technique using all the inliers
-            obtained from the RANSAC and the coarse estimate. This method is of
-            alternate minimization type, in which we alternate between
-            estimating the rotation and the translation at each step. Thorough
-            experiments with simulated data and two real-world datasets show
-            that using these features and the combined solvers improves accuracy
-            and is faster than the baselines.
+            3D Registration is a fundamental part of several robotics and automation tasks. While classical methods predominantly exploit constraints from points or plane
+            correspondences, we have a different take using line intersections. In other words, we focus on exploiting geometric constraints arising from the intersection of two
+            (different) 3D line segments in two scans. In particular, we derive nine minimal solvers from various geometric constraints arising from line intersections along with
+            other constraints: plane correspondences, point correspondences, and line matches. We follow a two-step method for 3D registration: a coarse estimation with outlier
+            rejection followed by refinement. In the first step, we use a hybrid RANSAC loop that utilizes all the minimal solvers. This RANSAC outputs a rough estimate for the 3D
+            registration and the outlier/inlier classification for the 3D features. As for the refinement, we offer a non-linear technique using all the inliers obtained from the
+            RANSAC and the coarse estimate. This method is of alternate minimization type, in which we alternate between estimating the rotation and the translation at each step.
+            Thorough experiments with simulated data and two real-world datasets show that using these features and the combined solvers improves accuracy and is faster than the
+            baselines.
           </p>
         </div>
         <div class="pic pic_right">
-          <img
-            src="line_intersection_teaset.jpg"
-            alt="Line Intersection Teaser"
-          />
+          <img src="line_intersection_teaset.jpg" alt="Line Intersection Teaser" />
         </div>
       </div>
 
@@ -193,40 +167,24 @@
       <div class="project_body">
         <div class="ptext ptext_right">
           <p>
-            Our two-step method is a coarse and fine estimation approach. While
-            the coarse estimate already provides good results, we see that our
-            alternative minimization refinement approach, in general, is able to
-            improve the accuracy significantly. For example, RANSAC Ours Ref is
-            outperformed by the baselines in only two of the 14 sequences. More
-            critical than that, when our two-step approach using line
-            intersections is better than the baselines, the refinement can
-            improve the results significantly with respect to the coarse
-            approach obtained from RANSAC. For example, when compared to the
-            baselines, we have improvements of around 48% in rotation and 31% in
-            translation for the TUM sequence #7; 42% in rotation and 24% in
-            translation in SUN sequence #1. We see that the proposed refinement
-            technique has a minor impact on the computation time. The
-            conclusions outlined for our strategy without refinement are kept
-            for our approach with refinement. For example, RANSAC Ours Ref is
-            only slightly slower than FGR, and about three times faster than
-            DGR.
+            Our two-step method is a coarse and fine estimation approach. While the coarse estimate already provides good results, we see that our alternative minimization
+            refinement approach, in general, is able to improve the accuracy significantly. For example, RANSAC Ours Ref is outperformed by the baselines in only two of the 14
+            sequences. More critical than that, when our two-step approach using line intersections is better than the baselines, the refinement can improve the results
+            significantly with respect to the coarse approach obtained from RANSAC. For example, when compared to the baselines, we have improvements of around 48% in rotation and
+            31% in translation for the TUM sequence #7; 42% in rotation and 24% in translation in SUN sequence #1. We see that the proposed refinement technique has a minor impact
+            on the computation time. The conclusions outlined for our strategy without refinement are kept for our approach with refinement. For example, RANSAC Ours Ref is only
+            slightly slower than FGR, and about three times faster than DGR.
           </p>
         </div>
         <div class="pic pic_left">
-          <img
-            src="results_1_line_inter_constraint.jpg"
-            alt="Results 1 Line Intersection Constraint"
-          />
+          <img src="results_1_line_inter_constraint.jpg" alt="Results 1 Line Intersection Constraint" />
         </div>
       </div>
 
       <hr />
 
       <div class="full_length">
-        <img
-          src="results_2_line_inter_constraint.jpg"
-          alt="Results 2 Line Intersection Constraint"
-        />
+        <img src="results_2_line_inter_constraint.jpg" alt="Results 2 Line Intersection Constraint" />
       </div>
 
       <div class="background_project_light">

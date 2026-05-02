@@ -5,6 +5,7 @@
 *.json
 !package.json
 !package-lock.json
+!.vscode/settings.json
 .DS_Store
 projects/.DS_Store
 uv.lock

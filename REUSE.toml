@@ -1,5 +1,12 @@
 version = 1
 
+[[annotations]]
+path = [
+  ".vscode/*.json",
+]
+SPDX-FileCopyrightText = "2026 Pedro Miraldo"
+SPDX-License-Identifier = "MIT"
+
 
 [[annotations]]
 path = [
@@ -10,8 +17,6 @@ path = [
 ]
 SPDX-FileCopyrightText = "2026 Pedro Miraldo"
 SPDX-License-Identifier = "MIT"
-
-
 
 [[annotations]]
 path = [

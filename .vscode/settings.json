@@ -1,0 +1,14 @@
+{
+    // Global rulers (fallback for all languages)
+    "editor.rulers": [80],
+
+    "[html]": {
+        "editor.rulers": [180]
+    },
+    "[css]": {
+        "editor.rulers": [80]
+    },
+    "[markdown]": {
+        "editor.rulers": [180],
+    }
+}

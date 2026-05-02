@@ -43,9 +43,7 @@
             <!--
                     add authors with links to their pages
                 -->
-            <a class="underline" href="https://goncalo120.github.io/"
-              >G. Dias Pais</a
-            >
+            <a class="underline" href="https://goncalo120.github.io/">G. Dias Pais</a>
             <a href="https://www.cs.utah.edu/~srikumar/">Srikumar Ramalingam</a>
             <a href="https://ee.iisc.ac.in/~venu/">Venu Madhav Govindu</a>
             <a href="http://users.isr.ist.utl.pt/~jan/">Jacinto C Nascimento</a>
@@ -60,9 +58,7 @@
                     Main contact Contact
                 -->
             E-Mail:
-            <a href="mailto:goncalo.pais@tecnico.ulisboa.pt"
-              >goncalo.pais@tecnico.ulisboa.pt</a
-            >
+            <a href="mailto:goncalo.pais@tecnico.ulisboa.pt">goncalo.pais@tecnico.ulisboa.pt</a>
           </h4>
 
           <!--
@@ -106,16 +102,10 @@
 
         <div class="ptext ptext_left">
           <p>
-            We present 3DRegNet, a novel deep learning architecture for the
-            registration of 3D scans. Given a set of 3D point correspondences,
-            we build a deep neural network to address the following two
-            challenges: (i) classification of the point correspondences into
-            inliers/outliers, and (ii) regression of the motion parameters that
-            align the scans into a common reference frame. With regard to
-            regression, we present two alternative approaches: (i) a Deep Neural
-            Network (DNN) registration and (ii) a Procrustes approach using SVD
-            to estimate the transformation. Our correspondence-based approach
-            achieves a higher speedup compared to competing baselines.
+            We present 3DRegNet, a novel deep learning architecture for the registration of 3D scans. Given a set of 3D point correspondences, we build a deep neural network to
+            address the following two challenges: (i) classification of the point correspondences into inliers/outliers, and (ii) regression of the motion parameters that align the
+            scans into a common reference frame. With regard to regression, we present two alternative approaches: (i) a Deep Neural Network (DNN) registration and (ii) a
+            Procrustes approach using SVD to estimate the transformation. Our correspondence-based approach achieves a higher speedup compared to competing baselines.
           </p>
         </div>
         <div class="pic pic_right">
@@ -132,16 +122,10 @@
 
         <div class="ptext ptext_right">
           <p>
-            We describe our architecture consisting of two 3DRegNet where the
-            second network provides a regression refinement. A commonly adopted
-            approach for 3D registration is to first consider a rough estimate
-            for the transformation followed by a refinement strategy. Following
-            this reasoning, we consider the possibility of using an additional
-            3DRegNet. The first 3DRegNet provides a rough estimate trained for
-            larger rotation and translation parameters values. Subsequently, the
-            second smaller network is used for refinement, estimating smaller
-            transformations. This can also be seen as deep-supervision that is
-            shown to be useful in many applications.
+            We describe our architecture consisting of two 3DRegNet where the second network provides a regression refinement. A commonly adopted approach for 3D registration is to
+            first consider a rough estimate for the transformation followed by a refinement strategy. Following this reasoning, we consider the possibility of using an additional
+            3DRegNet. The first 3DRegNet provides a rough estimate trained for larger rotation and translation parameters values. Subsequently, the second smaller network is used
+            for refinement, estimating smaller transformations. This can also be seen as deep-supervision that is shown to be useful in many applications.
           </p>
         </div>
       </div>
@@ -151,21 +135,12 @@
       <div class="project_body">
         <div class="ptext ptext_left">
           <p>
-            We can see that the initial estimates provided by 3DRegNet (3DRegNet
-            + ICP) outperform those of FGR + ICP. It is particularly noteworthy
-            that even though ICP is local, 3DRegNet + ICP converges to a better
-            minimum than FGR + ICP. This means that a deep learning approach
-            allows us to perform better when the pairwise correspondences are of
-            lower quality, making the problem harder. We are at least 8x faster
-            than FGR and 25x faster than RANSAC in computation time. All
-            computation timings are obtained using the CPU. When considering the
-            use of ICP and Umeyama refinement techniques, in terms of accuracy,
-            we see that both the 3DRegNet + ICP and the 3DRegNet + U beat any
-            other methods. With results from 3DRegNet + ICP, we conclude that
-            the solution to the transformation provided by our network leads ICP
-            to a lower minimum than FGR + ICP. From 3DRegNet + U, we get that
-            our classification selects better the inliers. We can draw the same
-            conclusions as before in terms of computation time. We show some
+            We can see that the initial estimates provided by 3DRegNet (3DRegNet + ICP) outperform those of FGR + ICP. It is particularly noteworthy that even though ICP is local,
+            3DRegNet + ICP converges to a better minimum than FGR + ICP. This means that a deep learning approach allows us to perform better when the pairwise correspondences are
+            of lower quality, making the problem harder. We are at least 8x faster than FGR and 25x faster than RANSAC in computation time. All computation timings are obtained
+            using the CPU. When considering the use of ICP and Umeyama refinement techniques, in terms of accuracy, we see that both the 3DRegNet + ICP and the 3DRegNet + U beat
+            any other methods. With results from 3DRegNet + ICP, we conclude that the solution to the transformation provided by our network leads ICP to a lower minimum than FGR +
+            ICP. From 3DRegNet + U, we get that our classification selects better the inliers. We can draw the same conclusions as before in terms of computation time. We show some
             visualization results below.
           </p>
         </div>
