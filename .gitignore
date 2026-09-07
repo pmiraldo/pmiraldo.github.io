@@ -6,8 +6,10 @@
 !package.json
 !package-lock.json
 !.vscode/settings.json
+!.vscode/extensions.json
 .DS_Store
 projects/.DS_Store
+project_gif/.DS_Store
 uv.lock
 .venv/
 node_modules/

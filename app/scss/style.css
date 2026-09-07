@@ -298,6 +298,9 @@ ol li {
   margin-top: 0;
   margin-bottom: 0;
 }
+.row_bio_bio_news li {
+  margin-top: 0.3rem;
+}
 .row_bio_papers {
   float: left;
   width: 65%;
